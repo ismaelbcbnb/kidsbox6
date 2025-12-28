@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="viewport" content="target-densitydpi=device-dpi, width=device-width"><!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">--><meta name="author" content="Netex"><meta name="dcterms.created" content="31-05-2017 09:50:39"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=Edge"><![endif]--><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/js/libs/mediaelement/mediaelementplayer.min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/css/kidsBox_min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/js/netex/htmlActivity/css/testLC_kidsBox_min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/css/translate.css"><title>Presentation plus</title><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/jquery-ui.min.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/normalize.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/animate.min.css"><link rel="stylesheet" href="commoncontents/ntxtmp/js/netex/plugins/video/netexVideoSkin.css"><link rel="stylesheet" href="commoncontents/ntxtmp/js/netex/plugins/audio/netexAudioSkin.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/netex/ntxtmp_min.css"><meta name="learningmaker-version" content="4.19.1.9"></head><body data-course-id="CODE-69962-zW12bu" class="learner-package">
+
+            
+
+
+<div id="page-wrap" class="portrait">
+    <noscript id="gaTrackingConfig" data-ga-tracking-id="UA-8600104-1" data-ga-tracking-product-name="presentationplus" data-ga-tracking-course-name="kidsboxAE" data-ga-tracking-level-name="level6" data-ga-tracking-unit-name=""></noscript>
+
+<div id="main-menu-wrap">
+    <ul class="main-menu enabled" id="main-menu"><li class="main-menu-item home active">  
+            <a href="../index.html" title="Home" class="sprite"></a>
+        </li>
+        <li class="main-menu-item pupil-book active">
+            <span class="sprite" title="Student's Book"></span>
+            <ul class="navigator pupil-book-navigator"></ul></li>
+        <li class="main-menu-item activity-book">
+           <span class="sprite" title="Workbook"></span>
+            <ul class="navigator activity-book-navigator"></ul></li>
+        <li class="main-menu-item media">
+            <span class="sprite" title="Media Library"></span>
+            <ul class="sub-menu" id="sub-menu-media"><li class="sub-menu-item video-popup">    
+                    <span class="sprite" title="Videos"></span>
+                </li>
+                <li class="sub-menu-item audio-popup">   
+                    <span class="sprite" title="Extra Audio"></span>
+                </li>
+                <li class="sub-menu-item flashcard-popup">    
+                    <span class="sprite" title="Flashcards"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item resource-popup">
+            <span class="sprite" title="Resources"></span>
+        </li>
+        <li class="main-menu-item link-popup active">
+            <span class="sprite" title="Links"></span>
+        </li>
+        <li class="main-menu-item bookmark active">
+            <span class="sprite" title="Bookmarks"></span>
+            <ul class="sub-menu" id="sub-menu-bookmark"><li class="sub-menu-item return active">   
+                    <span class="sprite" title="Return"></span>
+                </li>
+                <li class="sub-menu-item add active">  
+                    <span class="sprite" title="Add bookmark"></span>
+                </li>
+                <li class="sub-menu-item list-popup active">   
+                    <span class="sprite" title="Bookmark list"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item note active">
+            <span class="sprite" title="Notes"></span>
+            <ul class="sub-menu" id="sub-menu-note"><li class="sub-menu-item add-note active">      
+                    <span class="sprite" title="Add Note"></span>
+                </li>
+                <li class="sub-menu-item add-attachment active">    
+                    <span class="sprite" title="Add Attachment"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item mask active">
+            <span class="sprite" title="Mask"></span>
+        </li>
+        <li class="main-menu-item notepad active">
+            <span class="sprite" title="Notepad"></span>
+        </li>
+    </ul><div id="title-bar">
+                        <span class="sprite zoom zoom-in" title="Zoom In"></span>
+        <div id="answer-key-nav">
+            <ul></ul></div>
+    </div>
+    
+</div>
+    
+
+ 
+    <noscript data-type="popup" data-id="video-popup"> 
+
+        <div class="popup video-popup">
+            <span class="sprite close-popup"></span>
+            <h2 class="popup-title">Video</h2>
+
+            <div id="video-player-wrap">
+                <div id="video-player-placeholder"></div>
+                <div id="transcript-buttons" class="video hidden">
+                    <button id="toggle-transcript">Show transcript</button>
+                    <button id="transcript-highlight" class="sprite hidden"></button>
+                </div>
+            </div>
+            <div id="video-gallery-wrap">
+                <ul id="video-gallery"></ul></div>
+            <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </noscript> 
+
+    
+ 
+    <noscript data-type="popup" data-id="audio-popup"> 
+        <div class="popup audio-popup">
+                <span class="sprite close-popup"></span>
+            <h2 class="popup-title">Audio</h2>
+                <ul id="audio-gallery"><div class="audio-gallery-row">
+                                        </div>
+                </ul><div id="audio-player-wrap"></div>
+                <div id="transcript-buttons" class="audio hidden">
+                    <button id="toggle-transcript">Show transcript</button>
+                    <button id="transcript-highlight" class="sprite hidden"></button>
+                </div>
+                <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </noscript> 
+      
+    <noscript data-type="popup" data-id="flashcard-popup"> 
+<div class="popup flashcard-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Flashcards</h2>
+    
+    <div class="carousel">
+        <span class="sprite nav nav-prev enabled" id="prev-flashcard"></span>
+        <div class="carousel-content-wrap">
+            <ul class="carousel-content"></ul></div>
+        <span class="sprite nav nav-next enabled" id="next-flashcard"></span>
+    </div>
+</div>
+ 
+    </noscript> 
+  
+    
+    <noscript data-type="popup" data-id="link-popup"> 
+<div class="popup link-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Links</h2>
+    <ul id="list-link"><li class="link">
+                <a target="_blank" href="http://www.cambridgelms.org/primary/p/splash">
+            Cambridge LMS (online homework)        </a>
+    </li>
+
+    <li class="link">
+                <a target="_blank" href="http://www.cambridge.org/gb/cambridgeenglish/catalog/primary/kids-box-american-english-2nd-edition">
+            Kid’s Box website        </a>
+    </li>
+
+    <li class="link">
+                <a target="_blank" href="mailto:lms.support@cambridge.org">
+            Customer support        </a>
+    </li>
+    </ul><div class="buttons-wrap">
+        <button id="add-link-button" class="button">Add link</button>
+    </div>
+</div>
+ 
+    </noscript> 
+
+    <noscript data-type="dialog" id="new-link-dialog-template"> 
+        <div id="new-link-dialog">
+            Link name <br><input type="text" id="link-name" value=""><br>
+            Link address <br><input type="text" value="" id="link-address" placeholder="www."><br><div class="buttons-wrap">
+                <button id="new-link-button-accept" class="button">Accept</button>
+                <button id="new-link-button-cancel" class="button">Cancel</button>
+            </div>
+        </div>
+    </noscript>
+        
+
+     
+    <noscript data-type="popup" data-id="resource-popup"> 
+<div class="popup resource-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Resources</h2>
+    <ul><li class="resource">
+                <a target="_blank" href="resources/pdf/pp_help_guide.pdf">
+            Help Guide 
+        </a>
+    </li>
+
+    </ul></div>
+ 
+    </noscript> 
+
+<noscript data-type="popup" data-id="pupil-popup"> 
+    <div class="popup pupil-popup ">
+        <h2 class="popup-title">Student's Book</h2>
+        <div class="carousel">
+            <span class="sprite  nav nav-prev enabled" id="prev-book-page"></span>
+            <div class="carousel-content-wrap">
+                <ul class="carousel-content"><li class="page-thumb" data-book="pupil" data-page-id="91de40bbb1b34cdd4b643d65a8804286">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p088_th.jpg"><div class="page-number">
+                                Page 88                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="66875c123a3abb66ab19a0bf6add7b68">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p089_th.jpg"><div class="page-number">
+                                Page 89                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="w91de40bbb1b34cdd4b643d65a8804286">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p090_th.jpg"><div class="page-number">
+                                Page 90                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="w66875c123a3abb66ab19a0bf6add7b68">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p091_th.jpg"><div class="page-number">
+                                Page 91                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="a884879b67dae9a66c531d13867a70b1">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p092_th.jpg"><div class="page-number">
+                                Page 92                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="50fb924bb66b9ab2622fce9f40ef0e06">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p093_th.jpg"><div class="page-number">
+                                Page 93                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="593e91ce4aafd252e989ac202f7850e0">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p094_th.jpg"><div class="page-number">
+                                Page 94                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="27a39f1eec9a25b2eb8452b202d7fecb">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p095_th.jpg"><div class="page-number">
+                                Page 95                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="ba3f871c5f87ce3dcebbd73687328b87">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p096_th.jpg"><div class="page-number">
+                                Page 96                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="c062d3c2678dbe3cb036456540719f9e">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p097_th.jpg"><div class="page-number">
+                                Page 97                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="23ebd571bf7494b308407b53c05b430b">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p098_th.jpg"><div class="page-number">
+                                Page 98                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="a95a6b9c07cfaa6170ee8d3ee8d11870">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p099_th.jpg"><div class="page-number">
+                                Page 99                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="f7c875778f9a4e1f18435c0de109ab91">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p100_th.jpg"><div class="page-number">
+                                Page 100                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="c5fc14f3e583c5f235172c76620f10bd">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p101_th.jpg"><div class="page-number">
+                                Page 101                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="0d07ff61277131fdb3cec03c3f860609">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p102_th.jpg"><div class="page-number">
+                                Page 102                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="ffae6778747b8cbec88453ed598627fe">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p103_th.jpg"><div class="page-number">
+                                Page 103                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="c2e68839c5fa0801a7823b5f1c5cf4fb">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p104_th.jpg"><div class="page-number">
+                                Page 104                            </div>
+                        </li>
+                                    </ul></div>
+            <span class="sprite  nav nav-next enabled" id="next-book-page"></span>
+        </div>
+    </div>
+</noscript>
+<noscript data-type="popup" data-id="activity-popup"> 
+    <div class="popup activity-popup">
+        <h2 class="popup-title">Workbook</h2>
+        <div class="carousel">
+            <span class="sprite  nav nav-prev enabled" id="prev-book-page"></span>
+            <div class="carousel-content-wrap">
+                <ul class="carousel-content"></ul></div>
+            <span class="sprite  nav nav-next enabled" id="next-book-page"></span>
+        </div>
+    </div>
+</noscript>
+<noscript data-type="popup" data-id="bookmark-list-popup"> 
+    <div class="popup bookmark-list-popup">
+        <span class="sprite close-popup"></span>
+        <h2 class="popup-title">Bookmarks</h2>
+        <div id="bookmark-list">
+
+        </div>
+    </div>
+</noscript>
+
+
+    <div id="popupView" class="ntx-popup"></div>
+    <div id="pageView" class="content" touch-action="none" data-trans-out-forward="fadeOut" data-trans-out-rewind="fadeOut" data-trans-in="fadeIn"></div>
+    
+ <noscript data-page-title="kb_dcp_ae_06_pb_p088" data-page-number="88" data-type="content" data-book="pupil" data-page-id="91de40bbb1b34cdd4b643d65a8804286">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 100px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+
+    
+                        <div id="413048a01d1313d02baf4003733280ad" class="sprite audio-resource" accesskey="" title="Audio" data-audio-src="resources/class_audio/kb_ae_sb6_listening_test_p88_part1_a17.mp3">
+                <div class="transcript hidden  " id="transcript_3663d319817507ea13b832b503e13c34">
+
+        
+    	 <p>Listen and look. There is one example.</p> <p>MAN: It’s a busy day at the airport.<br> GIRL: Yes, Uncle Richard. Lots of people are going on vacation.<br> MAN: That tall boy there in the blue shorts is in your class, isn’t he?<br> GIRL: Oh, yes. That’s Harry!</p> <p> </p> <p>Can you see the line? This is an example. Now you listen and draw lines.</p> <p>MAN: Those two girls are taking a lot of heavy bags.<br> GIRL: Oh, one of them is Emma!<br> MAN: Which one? The girl in the striped T-shirt?<br> GIRL: No, that’s her older sister. Emma’s T-shirt isn’t striped.<br> MAN: Hmm, that boy close to them has a problem, I think.<br> GIRL: Oh, it’s Jack! He’s opening his backpack.<br> MAN: Has he forgotten his ticket?<br> GIRL: No – I can see it in his hand. MAN: Some people aren’t on vacation. Can you see the man who’s carrying a black suitcase?<br> GIRL: Yes.<br> MAN: Well, his name’s William. He works in my office, and he’s flying to Paris today for a business meeting.<br> GIRL: Is his wife going with him?<br> MAN: Yes.<br> GIRL: Lots of people work in this airport, don’t they?<br> MAN: Yes. That man and woman wearing uniforms both work here.<br> GIRL: Those two who are talking? Are they pilots?<br> MAN: Well, he is, but she works in the bank. Her name’s Katy.<br> GIRL: Oh, look! Here comes Aunt Sue now!<br> MAN: Where? I can’t see her.<br> GIRL: She’s wearing a beautiful black and white spotted dress, and she has a pink suitcase.</p> <p>MAN: Oh, yes. That’s all new. She’s been shopping. Has she bought any presents for us, do you think?</p> <p> </p></div>
+
+            </div>
+            </div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p088.jpg"><canvas id="page-canvas-91de40bbb1b34cdd4b643d65a8804286" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p089" data-page-number="89" data-type="content" data-book="pupil" data-page-id="66875c123a3abb66ab19a0bf6add7b68">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 60px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+
+    
+                        <div id="93d3d2d3688dcdaf57633824dd3e942e" class="sprite audio-resource" accesskey="" title="Audio" data-audio-src="resources/class_audio/kb_ae_sb6_listening_test_p89_part2_a18.mp3">
+                <div class="transcript hidden  " id="transcript_38ffe0b2d2b48c1f08a1b2e37b6940e0">
+
+        
+    	 <p>Listen and look. There is one example.</p> <p>PETER: Hello, Sally. Peter here – David’s dad. Do you have a minute, please? I want to ask you some questions.<br> SALLY: Fine, Peter. What’s it about?<br> PETER: Well, your children have a music teacher, don’t they? What does she teach them to play?<br> SALLY: They have guitar lessons.<br> PETER: Excellent! That’s what our David wants to learn. Can you tell me more about her? I’ll write it all down.<br> SALLY: OK. She’s a very good teacher. Our children love her.</p> <p> </p> <p>Can you see the answer? Now you listen and write.</p> <p> </p> <p>PETER: First, what’s her name?<br> SALLY: It’s Betty Dowler. That’s D-O-W-L-E R.<br> PETER: Good. I got that. Does she teach at home?<br> SALLY: Yes, she does. She lives on 45 Silver Street. Do you know where that is?<br> PETER: I think so. It’s close to the library, isn’t it?<br> SALLY: That’s right. Now, she doesn’t teach every day. There are no lessons on the weekends or on Wednesdays. Sorry, that’s wrong – I mean Tuesdays.<br> PETER: OK. And what times does she teach?<br> SALLY: In the evenings, after six o’clock.<br> PETER: Good. That’s fine for us. Last thing. Do you have her telephone number, please?<br>  SALLY: Yes. I think I can remember it. Mmm, let’s see. Is it 353 289? No, that’s someone else … OK, here it is – 356 401.<br> PETER: Great. Thanks a lot, Sally. I’ll call her now.</p></div>
+
+            </div>
+            </div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p089.jpg"><canvas id="page-canvas-66875c123a3abb66ab19a0bf6add7b68" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p090" data-page-number="90" data-type="content" data-book="pupil" data-page-id="w91de40bbb1b34cdd4b643d65a8804286">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 60px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+
+    
+                        <div id="0c8244af2680a12f798f7ae3d7385826" class="sprite audio-resource" accesskey="" title="Audio" data-audio-src="resources/class_audio/kb_ae_sb6_listening_test_p90_part3_a19.mp3">
+                <div class="transcript hidden  " id="transcript_fa697e63ad00efe4a071aa497913bf30">
+
+        
+    	 <p>Listen and look. There is one example. Where did the baby put these things?</p> <p>MICHAEL: How old is your little boy, Mrs. Cook?<br> MRS. COOK: Sam’s two now, Michael. He can walk and talk, and he does lots of funny and naughty things. He loves hiding things so his dad and I can’t find them. Yesterday he put my cell phone in the fridge. I looked for it for an hour!</p> <p> </p> <p>Can you see the letter "C"? Now you listen and write a letter in each box.</p> <p> </p> <p>MICHAEL: What else has he done? I like hearing about him!<br> MRS. COOK: Oh, one day he picked up my keys. Then he went out to play in the backyard, and he dropped them there. I found them when I took him a cup of milk.<br> MICHAEL: Are you angry with him when he hides things?<br> MRS. COOK: No, Michael! He’s only a baby! But sometimes I have to laugh. One day I left my purse on the floor in the hallway, and he opened it and took my diary. Guess where he put it! In the oven! I was very surprised when I opened the door to put our dinner in!<br> MICHAEL: Does he just hide your things?<br> MRS. COOK: Oh, no! One day he found his grandma’s comb and put it in the toy cupboard. We looked for it everywhere! MICHAEL: Did she mind?<br> MRS. COOK: No. It was just an old one. It wasn’t important. But one day I had some new gloves and I wanted to put them on because it was cold. I couldn’t find them, so I had to go out without them. Later, I found them in the pocket of his dad’s jacket.<br> MICHAEL: And naughty Sam put them there! What’s the worst thing he’s ever done?<br> MRS. COOK: Oh, that’s easy! Once I put my gold ring on a shelf in the bathroom, and I forgot to put it on again. Sam found it and threw it in the trash can!<br> MICHAEL: Oh, no! Did you get it back again?<br> MRS.COOK: Yes, look. I’m wearing it now.</p></div>
+
+            </div>
+            </div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p090.jpg"><canvas id="page-canvas-w91de40bbb1b34cdd4b643d65a8804286" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p091" data-page-number="91" data-type="content" data-book="pupil" data-page-id="w66875c123a3abb66ab19a0bf6add7b68">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 60px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+
+    
+                        <div id="2f61b6c407045affa64938eeb2e0e6e2" class="sprite audio-resource" accesskey="" title="Audio" data-audio-src="resources/class_audio/kb_ae_sb6_listening_test_p91_part4_a20.mp3">
+                <div class="transcript hidden  " id="transcript_e732d7a6d54b707b7885aa1718361733">
+
+        
+    	 <p>Listen and look. There is one example. How will Fred help his mom?</p> <p>MOM: Fred, you know my cousin Mary’s coming to visit us today? Can you help me with something?<br> FRED: OK, Mom. What should I do? Can I go to the stores for you?<br> MOM: Oh, I’ve done that and I’ve already cleaned the house. Could you help make lunch for us?<br> FRED: Great! I like doing that!</p> <p> </p> <p>Can you see the check? Now you listen and check the box.</p> <p> </p> <ol><li>What will they have for lunch?<br> FRED: What are we having for lunch, Mom?<br> MOM: I have some nice fish. Will you make a salad for us to eat with it?<br> FRED: OK. Can we have fries, too?<br> MOM: Not today. But we can have some ice cream.<br> FRED: Yes, please!<br>  </li> <li>What does Mary look like?<br> FRED: I don’t remember your cousin Mary. Does she look like you?<br> MOM: Well, her hair is brown like mine.<br> FRED: Is it curly, like yours?<br> MOM: No, it isn’t. And Mary’s eyes are blue, but mine are brown.<br>  </li> <li>What time will Mary’s train arrive?<br> FRED: What time is she going to come?<br> MOM: Oh, Mary lives a long way from here. She’s getting a train at 9:30 and it will take three hours to get here.<br> FRED: So she’ll be at the station twelve thirty.<br> MOM: Yes. At a quarter after twelve we’ll go to meet her in the car, and then we can have lunch at one o’clock.<br>  </li> <li>What’s Mary’s job?<br> MOM: Mary’s going to stay with us for three days. Then she has to go back to work. FRED: Where does she work?<br> MOM: In a big hospital.<br> FRED: Oh. Is she a doctor?<br> MOM: No. She’s the manager there. And her husband is a nurse. They both work very hard.<br>  </li> <li>What will they all do together?<br> FRED: Can we take Mary to the beach, Mom? That would be fun!<br> MOM: Oh, Fred, I’m afraid it’s too cold for that! But we could go to the movies tomorrow evening. Would you like that?<br> FRED: Oh, yes! Then Dad can come, too.<br> MOM: Yes. And tomorrow morning Mary and I can go shopping when you’re at school.</li> </ol></div>
+
+            </div>
+            </div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p091.jpg"><canvas id="page-canvas-w66875c123a3abb66ab19a0bf6add7b68" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p092" data-page-number="92" data-type="content" data-book="pupil" data-page-id="a884879b67dae9a66c531d13867a70b1">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p092.jpg"><canvas id="page-canvas-a884879b67dae9a66c531d13867a70b1" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p093" data-page-number="93" data-type="content" data-book="pupil" data-page-id="50fb924bb66b9ab2622fce9f40ef0e06">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 60px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+
+    
+                        <div id="f9c7e8a8615044d9b9c82174d0189760" class="sprite audio-resource" accesskey="" title="Audio" data-audio-src="resources/class_audio/kb_ae_sb6_listening_test_p93_part5_a21.mp3">
+                <div class="transcript hidden  " id="transcript_373443ac7dc63f87a19967e16b146dc4">
+
+        
+    	 <p>Listen and look at the picture. There is one example.</p> <p>MAN: Hello, Daisy. Would you like to color this picture? These people are driving through the desert in a kind of bus.<br> GIRL: I see. Have they stopped to have a drink? There’s some water here.<br> MAN: Yes. You get thirsty in the desert. It’s very hot.<br> GIRL: Yes, but look … there is a cloud in the sky. Can I color it gray?<br> MAN: Yes, OK.</p> <p> </p> <p>Can you see the gray cloud? This is an example. Now you listen and color and write.</p> <p> </p> <ol><li>MAN: Two people are sitting on the ground by the trees.<br> GIRL: Yes. One of them is holding a bowl. Should I color that?<br> MAN: No. Color his face.<br> GIRL: OK. I’ll make it pink because he’s feeling very hot and tired.<br>  </li> <li>MAN: Can you see the camels?<br> GIRL: Yes. There are four.<br> MAN: That’s right. Now find one of the baby ones.<br> GIRL: The one that’s walking in front of them? I'll color it brown.<br>  </li> <li>MAN: Would you like to write something now?<br> GIRL: OK. Where should I do that?<br> MAN: On the bus, please. Can you see the word “VACATIONS?”<br> GIRL: Yes. MAN: Well, write “SUNNY” above that.<br> GIRL: OK. I’m writing it now.<br>  </li> <li>MAN: Now we must find one last thing to color.<br> GIRL: Can I color something green? I’d like to use my favorite color.<br> MAN: OK. Look for the biggest leaf on the smallest tree, and color that.<br> GIRL: Great. I've done that now.<br>  </li> <li>GIRL: Can I write something else now?<br> MAN: Of course. Look, can you see where it says "camel"?<br> GIRL: Behind the baby camel at the end?<br> MAN: That's right. Write “tour” under that.<br> GIRL: OK. I've done that now!<br> MAN: Good job. The picture looks good now, doesn't it?</li> </ol></div>
+
+            </div>
+            </div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p093.jpg"><canvas id="page-canvas-50fb924bb66b9ab2622fce9f40ef0e06" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p094" data-page-number="94" data-type="content" data-book="pupil" data-page-id="593e91ce4aafd252e989ac202f7850e0">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p094.jpg"><canvas id="page-canvas-593e91ce4aafd252e989ac202f7850e0" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p095" data-page-number="95" data-type="content" data-book="pupil" data-page-id="27a39f1eec9a25b2eb8452b202d7fecb">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p095.jpg"><canvas id="page-canvas-27a39f1eec9a25b2eb8452b202d7fecb" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p096" data-page-number="96" data-type="content" data-book="pupil" data-page-id="ba3f871c5f87ce3dcebbd73687328b87">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p096.jpg"><canvas id="page-canvas-ba3f871c5f87ce3dcebbd73687328b87" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p097" data-page-number="97" data-type="content" data-book="pupil" data-page-id="c062d3c2678dbe3cb036456540719f9e">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p097.jpg"><canvas id="page-canvas-c062d3c2678dbe3cb036456540719f9e" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p098" data-page-number="98" data-type="content" data-book="pupil" data-page-id="23ebd571bf7494b308407b53c05b430b">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p098.jpg"><canvas id="page-canvas-23ebd571bf7494b308407b53c05b430b" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p099" data-page-number="99" data-type="content" data-book="pupil" data-page-id="a95a6b9c07cfaa6170ee8d3ee8d11870">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p099.jpg"><canvas id="page-canvas-a95a6b9c07cfaa6170ee8d3ee8d11870" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p100" data-page-number="100" data-type="content" data-book="pupil" data-page-id="f7c875778f9a4e1f18435c0de109ab91">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p100.jpg"><canvas id="page-canvas-f7c875778f9a4e1f18435c0de109ab91" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p101" data-page-number="101" data-type="content" data-book="pupil" data-page-id="c5fc14f3e583c5f235172c76620f10bd">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p101.jpg"><canvas id="page-canvas-c5fc14f3e583c5f235172c76620f10bd" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p102" data-page-number="102" data-type="content" data-book="pupil" data-page-id="0d07ff61277131fdb3cec03c3f860609">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p102.jpg"><canvas id="page-canvas-0d07ff61277131fdb3cec03c3f860609" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p103" data-page-number="103" data-type="content" data-book="pupil" data-page-id="ffae6778747b8cbec88453ed598627fe">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p103.jpg"><canvas id="page-canvas-ffae6778747b8cbec88453ed598627fe" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="kb_dcp_ae_06_pb_p104" data-page-number="104" data-type="content" data-book="pupil" data-page-id="c2e68839c5fa0801a7823b5f1c5cf4fb">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p104.jpg"><canvas id="page-canvas-c2e68839c5fa0801a7823b5f1c5cf4fb" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+    <div id="notepad-container" touch-action="none">
+        <canvas id="notepad-canvas-1" class="notepad-canvas"></canvas><canvas id="notepad-canvas-2" class="notepad-canvas"></canvas><canvas id="notepad-canvas-3" class="notepad-canvas"></canvas><span class="sprite close-popup"></span>
+        <div id="notepad-breadcrumb">
+            <span class="current-page">1</span> of 3
+        </div>
+        <span class="sprite nav-button active" id="notepad-nav-prev"></span>
+        <span class="sprite nav-button active" id="notepad-nav-next"></span>
+    </div>
+    <div id="draw-toolbar" class="dragable expanded active">
+        <div class="sprite toggle"></div>
+        <div class="draw-toolbar-content">
+            <div class="sprite drag"></div>
+            <div id="draw-tools-wrap">
+                <div class="sprite draw-tool pointer" data-tool="pointer" title=""></div>
+                <div class="sprite draw-tool pencil" data-tool="pencil" title="Pen">
+                    <div class="submenu pencil">
+                        <div class="submenu-item pencil-stroke small" data-size="6"></div>
+                        <div class="submenu-item pencil-stroke default" data-size="12"></div>
+                        <div class="submenu-item pencil-stroke big" data-size="40"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool marker" data-tool="marker" title="Highlighter">
+                    <div class="submenu marker">
+                        <div class="submenu-item marker-stroke small" data-size="6"></div>
+                        <div class="submenu-item marker-stroke default" data-size="12"></div>
+                        <div class="submenu-item marker-stroke big" data-size="40"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool rubber" data-tool="rubber" title="Eraser">
+                    <div class="submenu rubber">
+                        <div class="sprite submenu-item clear-all"></div>
+                        <div class="sprite submenu-item clear-line"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool palette" data-tool="palette" title="Colour">
+                    <div class="submenu palette">
+                        <div class="submenu-item color" data-color="#fff" style="background-color:#fff"></div>
+                        <div class="submenu-item color" data-color="#000" style="background-color:#000"></div>
+                        <div class="submenu-item color" data-color="#ec6f34" style="background-color:#ec6f34"></div>
+                        <div class="submenu-item color" data-color="#EC1E24" style="background-color:#EC1E24"></div>
+                        <div class="submenu-item color" data-color="#FCF204" style="background-color:#FCF204"></div>
+                        <div class="submenu-item color" data-color="#3CB64C" style="background-color:#3CB64C"></div>
+                        <div class="submenu-item color" data-color="#04AEEC" style="background-color:#04AEEC"></div>
+                        <div class="submenu-item color" data-color="#242264" style="background-color:#242264"></div>
+                        <div class="submenu-item color" data-color="#951D87" style="background-color:#951D87"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="item-container">
+        <span class="sprite close-item-container"></span>
+        <div id="item-container-placeholder"></div>
+    </div>
+
+    <div id="activity-overlay" class="hidden">
+        <div id="activity-placeholder"></div>
+        <span class="sprite close-activity"></span>
+    </div>
+
+    <div id="audio-resource-player" class="hidden">
+        <div class="header">
+            <span class="sprite drag"></span>
+            <span class="sprite close"></span>
+        </div>
+        <div class="body">
+            <div id="audio-player-wrap"></div>
+            <div id="transcript-buttons" class="audio">
+                <button id="toggle-transcript">Show transcript</button>
+                <button id="transcript-highlight" class="sprite hidden"></button>
+            </div>
+            <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </div>
+
+    <div id="answer-key-widget" class="hidden">
+        <div class="header">
+            <span class="sprite key"></span>
+            <span class="sprite close"></span>
+            <span class="sprite toggle"></span>
+        </div>
+        <div class="body">
+        </div>
+        <div class="footer">
+            <button id="show-all-keys" class="button button-small active">Show all</button>
+            <button id="next-key" class="button button-small active">Next Item</button>
+            <button id="prev-key" class="button button-small active">Last Item</button>
+        </div>
+    </div>
+
+    <input type="file" class="hidden" id="attachment-upload"></div>
+<div id="dialog-overlay" class="hidden">
+    <div id="dialog-placeholder"></div>
+</div>
+
+
+
+<noscript data-type="dialog" id="delete-note-dialog-template">
+    <div id="delete-note-dialog">
+        Are you sure that you want to delete this note? <br><div class="buttons-wrap">
+            <button id="delete-note-button-accept" class="button">Yes</button>
+            <button id="delete-note-button-cancel" class="button">No</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="delete-attachment-dialog-template">
+    <div id="delete-attachment-dialog">
+        Are you sure that you want to delete this attachment? <br><div class="buttons-wrap">
+            <button id="delete-attachment-button-accept" class="button">Yes</button>
+            <button id="delete-attachment-button-cancel" class="button">No</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-file-size-exceded-dialog-template">
+    <div id="delete-note-dialog">
+        Max file size exceded (1.5Mb)<br><div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-file-size-exceded-dialog-template">
+    <div id="delete-note-dialog">
+        Unexpected error saving your file. Filoe too large?<br><div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-database-error-dialog-template">
+    <div id="delete-note-dialog">
+        Error accessing local database. Please try again<br><div id="custom-html-placeholder"></div>
+        <div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-not-supported-dialog-template">
+    <div id="delete-note-dialog">
+        Attachment functionality is not supported on this device.<br><div id="custom-html-placeholder"></div>
+        <div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript id="audio-player-template">
+    <div class="media presentationPlus ">
+        <div class="media-body">
+                        <div class="netex-audio-player" data-audio-swf-url="./netexAudio.swf" data-audio-player-id="audio_">
+                <div class="netex-audio-container">
+                    <audio preload="none"><source src="" type="audio/mpeg"></source></audio></div>
+                <div class="netex-audio-controls-container">
+                    <div class="netex-audio-controls">
+                        <div class="netex-audio-controls-item netex-audio-button-play-pause-restart netex-audio-button-play"></div>
+                        <div class="netex-audio-time-container">
+                            <span class="netex-audio-time-current">00:00</span>
+                            <div class="netex-audio-progress-bar-container">
+                                <div class="netex-audio-progress-bar">
+                                    <div class="netex-audio-progress-bar-inner"></div>
+                                </div>
+                            </div>
+                            <span class="netex-audio-time-duration">00:00</span>
+                        </div>
+                        <div class="netex-audio-volume-control">
+                                <div class="netex-audio-volume-slider netex-audio-volume-draggable">
+                                    <div class="netex-audio-volume-slider-foreground"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+
+
+
+
+
+
+                  <script src="commoncontents/ntxtmp/js/libs/jquery-2.1.1.min.js"></script><script src="trackingConfig.js"></script><script src="commoncontents/kidsBox/js/libs/mediaelement/mediaelement-and-player.js"></script><script src="commoncontents/kidsBox/js/netex/htmlActivity_min.js"></script><script src="trackingConfig.js"></script><script src="commoncontents/ntxtmp/js/libs/pointerEvents.js"></script><script src="commoncontents/ntxtmp/js/netex/ntxtmp_min.js"></script><script src="commoncontents/ntxtmp/js/netex/model/dbModel.js"></script><style>
+                .Wirisformula:not([width]) {
+                    vertical-align: middle !important;
+                    margin-bottom: -8px !important;
+                }
+            </style><style>
+                .mathquill_image {
+                    vertical-align: middle !important;
+                    margin-top: -3px !important;
+                }
+            </style></body></html>

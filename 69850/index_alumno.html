@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="viewport" content="target-densitydpi=device-dpi, width=device-width"><!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">--><meta name="author" content="Netex"><meta name="dcterms.created" content="30-05-2017 13:44:59"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=Edge"><![endif]--><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/js/libs/mediaelement/mediaelementplayer.min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/css/kidsBox_min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/js/netex/htmlActivity/css/testLC_kidsBox_min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/css/translate.css"><title>Presentation plus</title><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/jquery-ui.min.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/normalize.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/animate.min.css"><link rel="stylesheet" href="commoncontents/ntxtmp/js/netex/plugins/video/netexVideoSkin.css"><link rel="stylesheet" href="commoncontents/ntxtmp/js/netex/plugins/audio/netexAudioSkin.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/netex/ntxtmp_min.css"><meta name="learningmaker-version" content="4.19.1.9"></head><body data-course-id="CODE-69850-eBzMJI" class="learner-package">
+
+            
+
+
+<div id="page-wrap" class="portrait">
+    <noscript id="gaTrackingConfig" data-ga-tracking-id="UA-8600104-1" data-ga-tracking-product-name="presentationplus" data-ga-tracking-course-name="kidsboxAE" data-ga-tracking-level-name="level6" data-ga-tracking-unit-name=""></noscript>
+
+<div id="main-menu-wrap">
+    <ul class="main-menu enabled" id="main-menu"><li class="main-menu-item home active">  
+            <a href="../index.html" title="Home" class="sprite"></a>
+        </li>
+        <li class="main-menu-item pupil-book active">
+            <span class="sprite" title="Student's Book"></span>
+            <ul class="navigator pupil-book-navigator"></ul></li>
+        <li class="main-menu-item activity-book">
+           <span class="sprite" title="Workbook"></span>
+            <ul class="navigator activity-book-navigator"></ul></li>
+        <li class="main-menu-item media">
+            <span class="sprite" title="Media Library"></span>
+            <ul class="sub-menu" id="sub-menu-media"><li class="sub-menu-item video-popup">    
+                    <span class="sprite" title="Videos"></span>
+                </li>
+                <li class="sub-menu-item audio-popup">   
+                    <span class="sprite" title="Extra Audio"></span>
+                </li>
+                <li class="sub-menu-item flashcard-popup">    
+                    <span class="sprite" title="Flashcards"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item resource-popup">
+            <span class="sprite" title="Resources"></span>
+        </li>
+        <li class="main-menu-item link-popup active">
+            <span class="sprite" title="Links"></span>
+        </li>
+        <li class="main-menu-item bookmark active">
+            <span class="sprite" title="Bookmarks"></span>
+            <ul class="sub-menu" id="sub-menu-bookmark"><li class="sub-menu-item return active">   
+                    <span class="sprite" title="Return"></span>
+                </li>
+                <li class="sub-menu-item add active">  
+                    <span class="sprite" title="Add bookmark"></span>
+                </li>
+                <li class="sub-menu-item list-popup active">   
+                    <span class="sprite" title="Bookmark list"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item note active">
+            <span class="sprite" title="Notes"></span>
+            <ul class="sub-menu" id="sub-menu-note"><li class="sub-menu-item add-note active">      
+                    <span class="sprite" title="Add Note"></span>
+                </li>
+                <li class="sub-menu-item add-attachment active">    
+                    <span class="sprite" title="Add Attachment"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item mask active">
+            <span class="sprite" title="Mask"></span>
+        </li>
+        <li class="main-menu-item notepad active">
+            <span class="sprite" title="Notepad"></span>
+        </li>
+    </ul><div id="title-bar">
+        Review Units 7–8                <span class="sprite zoom zoom-in" title="Zoom In"></span>
+        <div id="answer-key-nav">
+            <ul></ul></div>
+    </div>
+    
+</div>
+    
+
+ 
+    <noscript data-type="popup" data-id="video-popup"> 
+
+        <div class="popup video-popup">
+            <span class="sprite close-popup"></span>
+            <h2 class="popup-title">Video</h2>
+
+            <div id="video-player-wrap">
+                <div id="video-player-placeholder"></div>
+                <div id="transcript-buttons" class="video hidden">
+                    <button id="toggle-transcript">Show transcript</button>
+                    <button id="transcript-highlight" class="sprite hidden"></button>
+                </div>
+            </div>
+            <div id="video-gallery-wrap">
+                <ul id="video-gallery"></ul></div>
+            <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </noscript> 
+
+    
+ 
+    <noscript data-type="popup" data-id="audio-popup"> 
+        <div class="popup audio-popup">
+                <span class="sprite close-popup"></span>
+            <h2 class="popup-title">Audio</h2>
+                <ul id="audio-gallery"><div class="audio-gallery-row">
+                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                <div class="audio-gallery-row">
+                                                                                                                                                                            </div>
+                </ul><div id="audio-player-wrap"></div>
+                <div id="transcript-buttons" class="audio hidden">
+                    <button id="toggle-transcript">Show transcript</button>
+                    <button id="transcript-highlight" class="sprite hidden"></button>
+                </div>
+                <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </noscript> 
+    
+
+    
+                                
+
+    
+                                
+
+    
+                                
+
+    
+                                
+
+    
+                                  
+    <noscript data-type="popup" data-id="flashcard-popup"> 
+<div class="popup flashcard-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Flashcards</h2>
+    
+    <div class="carousel">
+        <span class="sprite nav nav-prev enabled" id="prev-flashcard"></span>
+        <div class="carousel-content-wrap">
+            <ul class="carousel-content"></ul></div>
+        <span class="sprite nav nav-next enabled" id="next-flashcard"></span>
+    </div>
+</div>
+ 
+    </noscript> 
+  
+    
+    <noscript data-type="popup" data-id="link-popup"> 
+<div class="popup link-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Links</h2>
+    <ul id="list-link"><li class="link">
+                <a target="_blank" href="http://www.cambridgelms.org/primary/p/splash">
+            Cambridge LMS (online homework)        </a>
+    </li>
+
+    <li class="link">
+                <a target="_blank" href="http://www.cambridge.org/gb/cambridgeenglish/catalog/primary/kids-box-american-english-2nd-edition">
+            Kid’s Box website        </a>
+    </li>
+
+    <li class="link">
+                <a target="_blank" href="mailto:lms.support@cambridge.org">
+            Customer support        </a>
+    </li>
+    </ul><div class="buttons-wrap">
+        <button id="add-link-button" class="button">Add link</button>
+    </div>
+</div>
+ 
+    </noscript> 
+
+    <noscript data-type="dialog" id="new-link-dialog-template"> 
+        <div id="new-link-dialog">
+            Link name <br><input type="text" id="link-name" value=""><br>
+            Link address <br><input type="text" value="" id="link-address" placeholder="www."><br><div class="buttons-wrap">
+                <button id="new-link-button-accept" class="button">Accept</button>
+                <button id="new-link-button-cancel" class="button">Cancel</button>
+            </div>
+        </div>
+    </noscript>
+        
+
+     
+    <noscript data-type="popup" data-id="resource-popup"> 
+<div class="popup resource-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Resources</h2>
+    <ul><li class="resource">
+                <a target="_blank" href="resources/pdf/pp_help_guide.pdf">
+            Help Guide 
+        </a>
+    </li>
+
+
+
+
+    </ul></div>
+ 
+    </noscript> 
+
+<noscript data-type="popup" data-id="pupil-popup"> 
+    <div class="popup pupil-popup ">
+        <h2 class="popup-title">Student's Book</h2>
+        <div class="carousel">
+            <span class="sprite  nav nav-prev enabled" id="prev-book-page"></span>
+            <div class="carousel-content-wrap">
+                <ul class="carousel-content"><li class="page-thumb" data-book="pupil" data-page-id="a5a96cfd0b88e2d1d84c3e7f2908edf3">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p080_th.jpg"><div class="page-number">
+                                Page 80                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="pupil" data-page-id="269baf63615a343235f494d5e2909e45">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_pb_p081_th.jpg"><div class="page-number">
+                                Page 81                            </div>
+                        </li>
+                                    </ul></div>
+            <span class="sprite  nav nav-next enabled" id="next-book-page"></span>
+        </div>
+    </div>
+</noscript>
+<noscript data-type="popup" data-id="activity-popup"> 
+    <div class="popup activity-popup">
+        <h2 class="popup-title">Workbook</h2>
+        <div class="carousel">
+            <span class="sprite  nav nav-prev enabled" id="prev-book-page"></span>
+            <div class="carousel-content-wrap">
+                <ul class="carousel-content"><li class="page-thumb" data-book="activity" data-page-id="wa5a96cfd0b88e2d1d84c3e7f2908edf3">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_ab_p080_th.jpg"><div class="page-number">
+                                Page 80                            </div>
+                        </li>
+                                                                    <li class="page-thumb" data-book="activity" data-page-id="w269baf63615a343235f494d5e2909e45">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/kb_dcp_ae_06_ab_p081_th.jpg"><div class="page-number">
+                                Page 81                            </div>
+                        </li>
+                                    </ul></div>
+            <span class="sprite  nav nav-next enabled" id="next-book-page"></span>
+        </div>
+    </div>
+</noscript>
+<noscript data-type="popup" data-id="bookmark-list-popup"> 
+    <div class="popup bookmark-list-popup">
+        <span class="sprite close-popup"></span>
+        <h2 class="popup-title">Bookmarks</h2>
+        <div id="bookmark-list">
+
+        </div>
+    </div>
+</noscript>
+
+
+    <div id="popupView" class="ntx-popup"></div>
+    <div id="pageView" class="content" touch-action="none" data-trans-out-forward="fadeOut" data-trans-out-rewind="fadeOut" data-trans-in="fadeIn"></div>
+    
+ <noscript data-page-title="u8_sb_p80" data-page-number="80" data-type="content" data-book="pupil" data-page-id="a5a96cfd0b88e2d1d84c3e7f2908edf3">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 100px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_c14c1b88b9948807d67794bca4531e76" title="Activity">
+	</div></div>
+
+<div class="resources-tab left" style="top : 470px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_f3f45c6a22314f95172ead0cb416acb5" title="Activity">
+	</div>
+
+    
+                        <div id="1dfe50908557b7f5b2a4163baa83d9aa" class="sprite audio-resource" accesskey="" title="Audio" data-audio-src="resources/class_audio/cd4/14_track_14.mp3">
+                <div class="transcript hidden  " id="transcript_7fbe1b49e0798453d874df3b6af2fc02">
+
+        
+    	 <p>GIRL: Dad! Come and look at this.<br></p><p>MAN: What is it, Betty?</p><p>GIRL: It's my school photograph. Look that's me.</p><p>MAN: Oh yes, I can see you. You're wearing your favorite striped stockings and your pink dress.</p><p>GIRL: That's right.</p><p>MAN: Who's the girl next to you?</p><p>GIRL: Which girl do you mean?</p><p>MAN: Sorry, there are two, aren't there? The one who's smiling.</p><p>GIRL: Oh, that's Emma. She's always smiling. She's really happy.</p><p>MAN: Who's the very tall boy? Look, he's standing close to the end.</p><p>GIRL: Next to the teacher?</p><p>MAN: That's right.</p><p>GIRL: That's Harry. He's a really good friend.</p><p>MAN: OK, so who's the boy in front of the teacher?</p><p>GIRL: The boy with the short dark hair is David.</p><p>MAN: Where's your friend Katy, then?</p><p>GIRL: Oh, she's standing at the back. Can you see her, behind me?</p><p>MAN: Is she wearing a jacket with a big pocket on it?</p><p>GIRL: No, she's standing next to that girl. She's got long blonde hair now.</p><p>MAN: OK. I can see her now. And who's that boy holding a book?</p><p>GIRL: Oh, that's Michael. He loves reading. He always carries a book.</p><p>MAN: That's good.</p><p>GIRL: Yes, and he's very funny too.<br></p></div>
+
+            </div>
+            </div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p080.jpg"><canvas id="page-canvas-a5a96cfd0b88e2d1d84c3e7f2908edf3" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="u8_sb_p81" data-page-number="81" data-type="content" data-book="pupil" data-page-id="269baf63615a343235f494d5e2909e45">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_pb_p081.jpg"><canvas id="page-canvas-269baf63615a343235f494d5e2909e45" class="page-canvas" width="630" height="801"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="u8_wb_p80" data-page-number="80" data-type="content" data-book="activity" data-page-id="wa5a96cfd0b88e2d1d84c3e7f2908edf3">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 90px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_2e8edd7986835170f372d53e5461920d" title="Activity">
+	</div></div>
+
+<div class="resources-tab left" style="top : 450px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_c0ee0437e1de95a088d9098664327730" title="Activity">
+	</div></div>
+
+<div class="resources-tab left" style="top : 540px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_091b976875854de1e6e0d9b810b880e4" title="Activity">
+	</div></div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_ab_p080.jpg"><canvas id="page-canvas-wa5a96cfd0b88e2d1d84c3e7f2908edf3" class="page-canvas" width="630" height="801"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+
+ <noscript data-page-title="u8_wb_p81" data-page-number="81" data-type="content" data-book="activity" data-page-id="w269baf63615a343235f494d5e2909e45">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+        
+
+<div class="resources-tab left" style="top : 40px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_d62a4735f97b3c23850e2629160f72a2" title="Activity">
+	</div></div>
+
+<div class="resources-tab right" style="top : 45px;">
+	
+            <div class="sprite icon-toggle"></div>
+            
+<div class="sprite activity-resource" rel-activity="activity_6a5baae9186a6fb3ad179c58b1cd916b" title="Activity">
+	</div>
+<div class="sprite activity-resource" rel-activity="activity_6c4b52f71478fee8e97887cce95c2747" title="Activity">
+	</div></div>        
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/kb_dcp_ae_06_ab_p081.jpg"><canvas id="page-canvas-w269baf63615a343235f494d5e2909e45" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+    <div id="notepad-container" touch-action="none">
+        <canvas id="notepad-canvas-1" class="notepad-canvas"></canvas><canvas id="notepad-canvas-2" class="notepad-canvas"></canvas><canvas id="notepad-canvas-3" class="notepad-canvas"></canvas><span class="sprite close-popup"></span>
+        <div id="notepad-breadcrumb">
+            <span class="current-page">1</span> of 3
+        </div>
+        <span class="sprite nav-button active" id="notepad-nav-prev"></span>
+        <span class="sprite nav-button active" id="notepad-nav-next"></span>
+    </div>
+    <div id="draw-toolbar" class="dragable expanded active">
+        <div class="sprite toggle"></div>
+        <div class="draw-toolbar-content">
+            <div class="sprite drag"></div>
+            <div id="draw-tools-wrap">
+                <div class="sprite draw-tool pointer" data-tool="pointer" title=""></div>
+                <div class="sprite draw-tool pencil" data-tool="pencil" title="Pen">
+                    <div class="submenu pencil">
+                        <div class="submenu-item pencil-stroke small" data-size="6"></div>
+                        <div class="submenu-item pencil-stroke default" data-size="12"></div>
+                        <div class="submenu-item pencil-stroke big" data-size="40"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool marker" data-tool="marker" title="Highlighter">
+                    <div class="submenu marker">
+                        <div class="submenu-item marker-stroke small" data-size="6"></div>
+                        <div class="submenu-item marker-stroke default" data-size="12"></div>
+                        <div class="submenu-item marker-stroke big" data-size="40"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool rubber" data-tool="rubber" title="Eraser">
+                    <div class="submenu rubber">
+                        <div class="sprite submenu-item clear-all"></div>
+                        <div class="sprite submenu-item clear-line"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool palette" data-tool="palette" title="Colour">
+                    <div class="submenu palette">
+                        <div class="submenu-item color" data-color="#fff" style="background-color:#fff"></div>
+                        <div class="submenu-item color" data-color="#000" style="background-color:#000"></div>
+                        <div class="submenu-item color" data-color="#ec6f34" style="background-color:#ec6f34"></div>
+                        <div class="submenu-item color" data-color="#EC1E24" style="background-color:#EC1E24"></div>
+                        <div class="submenu-item color" data-color="#FCF204" style="background-color:#FCF204"></div>
+                        <div class="submenu-item color" data-color="#3CB64C" style="background-color:#3CB64C"></div>
+                        <div class="submenu-item color" data-color="#04AEEC" style="background-color:#04AEEC"></div>
+                        <div class="submenu-item color" data-color="#242264" style="background-color:#242264"></div>
+                        <div class="submenu-item color" data-color="#951D87" style="background-color:#951D87"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="item-container">
+        <span class="sprite close-item-container"></span>
+        <div id="item-container-placeholder"></div>
+    </div>
+
+    <div id="activity-overlay" class="hidden">
+        <div id="activity-placeholder"></div>
+        <span class="sprite close-activity"></span>
+    </div>
+
+    <div id="audio-resource-player" class="hidden">
+        <div class="header">
+            <span class="sprite drag"></span>
+            <span class="sprite close"></span>
+        </div>
+        <div class="body">
+            <div id="audio-player-wrap"></div>
+            <div id="transcript-buttons" class="audio">
+                <button id="toggle-transcript">Show transcript</button>
+                <button id="transcript-highlight" class="sprite hidden"></button>
+            </div>
+            <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </div>
+
+    <div id="answer-key-widget" class="hidden">
+        <div class="header">
+            <span class="sprite key"></span>
+            <span class="sprite close"></span>
+            <span class="sprite toggle"></span>
+        </div>
+        <div class="body">
+        </div>
+        <div class="footer">
+            <button id="show-all-keys" class="button button-small active">Show all</button>
+            <button id="next-key" class="button button-small active">Next Item</button>
+            <button id="prev-key" class="button button-small active">Last Item</button>
+        </div>
+    </div>
+
+    <input type="file" class="hidden" id="attachment-upload"></div>
+<div id="dialog-overlay" class="hidden">
+    <div id="dialog-placeholder"></div>
+</div>
+
+
+
+<noscript data-type="dialog" id="delete-note-dialog-template">
+    <div id="delete-note-dialog">
+        Are you sure that you want to delete this note? <br><div class="buttons-wrap">
+            <button id="delete-note-button-accept" class="button">Yes</button>
+            <button id="delete-note-button-cancel" class="button">No</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="delete-attachment-dialog-template">
+    <div id="delete-attachment-dialog">
+        Are you sure that you want to delete this attachment? <br><div class="buttons-wrap">
+            <button id="delete-attachment-button-accept" class="button">Yes</button>
+            <button id="delete-attachment-button-cancel" class="button">No</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-file-size-exceded-dialog-template">
+    <div id="delete-note-dialog">
+        Max file size exceded (1.5Mb)<br><div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-file-size-exceded-dialog-template">
+    <div id="delete-note-dialog">
+        Unexpected error saving your file. Filoe too large?<br><div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-database-error-dialog-template">
+    <div id="delete-note-dialog">
+        Error accessing local database. Please try again<br><div id="custom-html-placeholder"></div>
+        <div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-not-supported-dialog-template">
+    <div id="delete-note-dialog">
+        Attachment functionality is not supported on this device.<br><div id="custom-html-placeholder"></div>
+        <div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript id="audio-player-template">
+    <div class="media presentationPlus ">
+        <div class="media-body">
+                        <div class="netex-audio-player" data-audio-swf-url="./netexAudio.swf" data-audio-player-id="audio_">
+                <div class="netex-audio-container">
+                    <audio preload="none"><source src="" type="audio/mpeg"></source></audio></div>
+                <div class="netex-audio-controls-container">
+                    <div class="netex-audio-controls">
+                        <div class="netex-audio-controls-item netex-audio-button-play-pause-restart netex-audio-button-play"></div>
+                        <div class="netex-audio-time-container">
+                            <span class="netex-audio-time-current">00:00</span>
+                            <div class="netex-audio-progress-bar-container">
+                                <div class="netex-audio-progress-bar">
+                                    <div class="netex-audio-progress-bar-inner"></div>
+                                </div>
+                            </div>
+                            <span class="netex-audio-time-duration">00:00</span>
+                        </div>
+                        <div class="netex-audio-volume-control">
+                                <div class="netex-audio-volume-slider netex-audio-volume-draggable">
+                                    <div class="netex-audio-volume-slider-foreground"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+
+
+
+<noscript data-type="activity" data-id="activity_c14c1b88b9948807d67794bca4531e76">
+<div>
+
+
+
+
+
+          <div class="container" style="height:1350px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_d5a88fa2-3a84-4e68-a45a-60d11306889f" class="testLC_KidsBox testLCComponent" style="height:1350px;">
+                <div id="7d5a3dd4d899d53c7921d0be735d7b9a_3rqWPf" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 1350px; width: 740px; top: 0px; left: 0px;" data-activity-type="T1-DragDrop" data-type="T1-DragDrop">
+                    <div class="marcoKidsBox " style="height: 1307px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 1175px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 1125px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:40px; width:588px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Read and choose.</b>                                    </p>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:170px; width:155px; top:96px; left:574px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_pb_u6_clil_ex5_01.jpg" nombre="External element 1;" style="height:170px; width:155px;"></div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:315px; top:90px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+Hi, Sarah. How are you?                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:356px; top:190px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+What are you writing in your notebook?                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:592px; top:290px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+When are you going to Mexico?                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:529px; top:390px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+What's the weather like in Mexico?                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:529px; top:490px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+They speak Spanish in Mexico. Do you speak Spanish?                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:486px; top:590px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+Have you been to Mexico before?                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:524px; top:690px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+You're so lucky!                                    </p>
+                        </div>
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:58px; width:448px; top:122px; left:110px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_PMFT34" data-sequence="12410"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:58px; width:448px; top:222px; left:110px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_Tvy16U" data-sequence="22410"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:58px; width:448px; top:322px; left:110px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_uVn2pc" data-sequence="32410"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:58px; width:448px; top:422px; left:110px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_UFm3jX" data-sequence="42410"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:58px; width:448px; top:522px; left:110px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_jmB4cd" data-sequence="52410"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:58px; width:448px; top:622px; left:110px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_y58bBI" data-sequence="62410"></div>
+
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:58px; width:448px; top:724px; left:160px; position:absolute;" correcto="jmB4cd" topinit="724px" leftinit="160px" id="oCwxm4" data-sequence="72660">
+
+                          <div style="position:relative;">
+                                                                 <p>
+A little. I want to learn more              when I'm there.                                             <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:58px; width:448px; top:799px; left:160px; position:absolute;" correcto="UFm3jX" topinit="799px" leftinit="160px" id="c4lNI4" data-sequence="80160">
+
+                          <div style="position:relative;">
+                                                                 <p>
+It might be hot. So I'll have to take lots of T-shirts and shorts.                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:58px; width:448px; top:874px; left:160px; position:absolute;" correcto="Tvy16U" topinit="874px" leftinit="160px" id="7hMR5v" data-sequence="87660">
+
+                          <div style="position:relative;">
+                                                                 <p>
+It's a list of all the things I need to take on vacation. I haven't packed my suitcase yet.                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:58px; width:448px; top:949px; left:160px; position:absolute;" correcto="uVn2pc" topinit="949px" leftinit="160px" id="24RB2j" data-sequence="95160">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Tomorrow afternoon. I need to            get ready today.                                             <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:58px; width:448px; top:1024px; left:160px; position:absolute;" correcto="PMFT34" topinit="1024px" leftinit="160px" id="CLuDQD" data-sequence="102660">
+
+                          <div style="position:relative;">
+                                                                 <p>
+I'm fine, thanks.                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:58px; width:448px; top:1099px; left:160px; position:absolute;" correcto="y58bBI" topinit="1099px" leftinit="160px" id="SV7IO1" data-sequence="110160">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Never. This is the first time.                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:90px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:190px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:290px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:390px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:490px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:590px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:78px; top:690px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>William:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:85px; top:140px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Sarah:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:85px; top:240px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Sarah:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:83px; top:340px; left:22px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Sarah:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:85px; top:440px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Sarah:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:85px; top:540px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Sarah:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:85px; top:640px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Sarah:</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:626px; top:45px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+William is talking to his friend Sarah. What does Sarah say?                                    </p>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_f3f45c6a22314f95172ead0cb416acb5">
+<div>
+
+
+
+
+
+          <div class="container" style="height:870px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_8d07a19b-e0fe-4579-b464-09ae1cd1c3e2" class="testLC_KidsBox testLCComponent" style="height:870px;">
+                <div id="7f30b679626652b2d181aa0bc6c70dc6_pInp7k" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 870px; width: 740px; top: 0px; left: 0px;" data-activity-type="T1-DragDrop" data-type="T1-DragDrop">
+                    <div class="marcoKidsBox " style="height: 827px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 695px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 645px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:39px; width:567.9px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Listen and match.</b>                                    </p>
+                        </div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                            <div style="height:54px; width:170.3px; top:93px; left:30px; position:absolute; z-index:991">
+                                <audio class="audioKidsBox" controls="controls" preload="none"><source type="audio/mpeg" src="resources/activities/kb2_ae_sb_l6_u8_rev_p80_ex2_a1.mp3"></source></audio></div>
+
+
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:414px; width:689px; top:196px; left:25px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_pb_u8_rev_ex2.png" nombre="External element 1;" style="height:414px; width:689px;"></div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:40px; width:100px; top:628px; left:15px; position:absolute;" correcto="elxqxu" topinit="628px" leftinit="15px" id="UGK6yt" data-sequence="62915">
+
+                          <div style="position:relative;">
+                                                                 <p>
+David                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:40px; width:100px; top:628px; left:136px; position:absolute;" correcto="itbNxg" topinit="628px" leftinit="136px" id="XIoEpD" data-sequence="63036">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Emma                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:40px; width:100px; top:628px; left:257px; position:absolute;" correcto="VpIVGL" topinit="628px" leftinit="257px" id="wqKNfn" data-sequence="63157">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Harry                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:40px; width:100px; top:628px; left:378px; position:absolute;" correcto="ifqFCX" topinit="628px" leftinit="378px" id="VN4vQ8" data-sequence="63278">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Katy                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:40px; width:100px; top:230px; left:389px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_eSp1mh" data-sequence="23489"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:40px; width:100px; top:167px; left:146px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_itbNxg" data-sequence="16946"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:40px; width:100px; top:230px; left:231px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_Jlfl4D" data-sequence="23331"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:40px; width:100px; top:167px; left:303px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_ifqFCX" data-sequence="17103"></div>
+
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:40px; width:100px; top:628px; left:499px; position:absolute;" correcto="Jlfl4D" topinit="628px" leftinit="499px" id="UsPycX" data-sequence="63399">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Betty                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                       <div class="arrastrableConFondo_KidsBox arrastrarComponent activo" style="height:40px; width:100px; top:628px; left:618px; position:absolute;" correcto="eSp1mh" topinit="628px" leftinit="618px" id="gfk1dW" data-sequence="63518">
+
+                          <div style="position:relative;">
+                                                                 <p>
+Michael                                  <span class="elementOn"></span>
+                                    </p>
+                        </div>
+
+                      </div>
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:40px; width:100px; top:167px; left:460px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_VpIVGL" data-sequence="17260"></div>
+
+
+                  <div class="destinoConFondo_KidsBox destinoArrastrarComponent" style="height:40px; width:100px; top:167px; left:618px; position:absolute;" urlrecurso="" id="divDestinoArrastrar_elxqxu" data-sequence="17418"></div>
+
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_2e8edd7986835170f372d53e5461920d">
+<div>
+
+
+
+
+
+          <div class="container" style="height:905px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_c5be08cb-5b6e-4ea4-b16f-f77e367fb9f0" class="testLC_KidsBox testLCComponent" style="height:905px;">
+                <div id="fad872f165df9afd161765d2693f827e_O4q3gL" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 905px; width: 740px; top: 0px; left: 0px;" data-activity-type="T6-TextEntryGapfill" data-type="T6-TextEntryGapfill">
+                    <div class="marcoKidsBox " style="height: 862px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 730px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 680px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:33px; width:500.45px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Read and complete.</b>                                    </p>
+                        </div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:530px; width:710px; top:177px; left:15px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_rev_ex1_01.jpg" nombre="External element 1;" style="height:530px; width:710px;"></div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:63px; width:710px; top:105px; left:15px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_ex8_03.png" nombre="image3;" style="height:63px; width:710px;"></div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:416.25px; top:205px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Friendly</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:469.25px; top:235px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+Dan, Alvin and Shari are sad because the second                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:185px; top:265px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+series of <i>Friendly</i> has                                    </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:65px; top:265px; left:436px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:65px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="just|||JUST" id="fegpbi" data-sequence="26936" maxlength="15"><div class="elementOn" style="left:24.5px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:449px; top:295px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+that the funniest episode of this series was "Jim's                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:197px; top:265px; left:507px; position:absolute;" seleccionable="false">
+                                    <p>
+ended. They all agree                                     </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:90px; top:385px; left:245px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:90px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="capital|||CAPITAL" id="YhtE26" data-sequence="38745" maxlength="15"><div class="elementOn" style="left:37px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:608.25px; top:325px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+new clothes."                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:716px; top:355px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+In this episode Jim and Peter went to London to buy some new clothes. They                                     </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:90px; top:445px; left:42px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:90px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="Paris|||PARIS" id="vQrIL4" data-sequence="44542" maxlength="15"><div class="elementOn" style="left:37px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:200px; top:385px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+caught the train to the                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:414px; top:385px; left:340px; position:absolute;" seleccionable="false">
+                                    <p>
+one Saturday morning. They found a store                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:672px; top:415px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+called Fine Fashion. The salesman told them that all the clothes came from                                    </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:110px; top:475px; left:381px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:110px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="pockets|||POCKETS" id="EkwPwp" data-sequence="47881" maxlength="15"><div class="elementOn" style="left:47px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:364px; top:475px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+Jim bought some big green pants with                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:571px; top:445px; left:137px; position:absolute;" seleccionable="false">
+                                    <p>
+, the capital of France and the capital of fashion.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:272px; top:475px; left:496px; position:absolute;" seleccionable="false">
+                                    <p>
+above the knees. He                                     </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:76px; top:505px; left:379px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:76px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="belt|||BELT" id="jIUKWG" data-sequence="50879" maxlength="15"><div class="elementOn" style="left:30px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:363px; top:505px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+bought a light gray T-shirt and a black                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:232px; top:505px; left:460px; position:absolute;" seleccionable="false">
+                                    <p>
+. He liked his new clothes,                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:535px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+and he decided to wear them home. When they went back to the station,                                     </p>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:106px; width:202px; top:204px; left:42px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_rev_ex1.jpg" nombre="image2;" style="height:106px; width:202px;"></div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:565px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+they saw Jim's grandfather, but it was very funny because his grandpa's                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:667px; top:595px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+pants were big and green with pockets above the knees. He was also                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:567px; top:625px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+wearing a light gray T-shirt and a black belt. His clothes were the                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:361px; top:655px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+as Jim's.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:61px; top:112px; left:92.5px; position:absolute;" seleccionable="false">
+                                    <p>
+capital                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:37px; top:112px; left:229px; position:absolute;" seleccionable="false">
+                                    <p>
+belt                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:49px; top:112px; left:340px; position:absolute;" seleccionable="false">
+                                    <p>
+Paris                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:41px; top:112px; left:452.5px; position:absolute;" seleccionable="false">
+                                    <p>
+just                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:54px; top:137px; left:446px; position:absolute;" seleccionable="false">
+                                    <p>
+same                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:71px; top:112px; left:566.5px; position:absolute;" seleccionable="false">
+                                    <p>
+pockets                                    </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:77px; top:625px; left:608px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:77px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="same|||SAME" id="hWPNPH" data-sequence="63108" maxlength="15"><div class="elementOn" style="left:30.5px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:92px; top:137px; left:556px; position:absolute;" seleccionable="false">
+                                    <p>
+umbrellas                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:49px; top:137px; left:340px; position:absolute;" seleccionable="false">
+                                    <p>
+worn                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:71px; top:137px; left:212px; position:absolute;" seleccionable="false">
+                                    <p>
+Spanish                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:64px; top:137px; left:91px; position:absolute;" seleccionable="false">
+                                    <p>
+button                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:474px; top:60px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+Choose six words from the box.                                    </p>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_c0ee0437e1de95a088d9098664327730">
+<div>
+
+
+
+
+
+          <div class="container" style="height:840px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_8ea7cd0f-08fe-4a98-ab84-397773d3a5dc" class="testLC_KidsBox testLCComponent" style="height:840px;">
+                <div id="fad872f165df9afd161765d2693f827e_jFF8oE" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 840px; width: 740px; top: 0px; left: 0px;" data-activity-type="T5-MultipleChoiceDropDown" data-type="T5-MultipleChoiceDropDown">
+                    <div class="marcoKidsBox " style="height: 797px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 665px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 615px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:33px; width:500.45px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Read and choose.</b>                                    </p>
+                        </div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:530px; width:710px; top:114px; left:15px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_rev_ex2_01.jpg" nombre="External element 1;" style="height:530px; width:710px;"></div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:416.25px; top:145px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>Friendly</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:469.25px; top:205px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+Dan, Alex, and Maria are sad because the second                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:449px; top:235px; left:249px; position:absolute;" seleccionable="false">
+                                    <p>
+series of <i>Friendly</i> has just ended. They all agree that                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:265px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+ the funniest episode of this series was "Jim's new clothes."                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:716px; top:295px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+In this episode Jim and Peter went to London to buy some new clothes. They                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:664px; top:325px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+caught the train to the capital one Saturday morning. They found a store                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:672px; top:355px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+called Fine Fashion. The salesman told them that all the clothes came from                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:659px; top:415px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+Jim bought some big green pants with pockets above the knees. He bought                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:571px; top:385px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+Paris, the capital of France and the capital of fashion.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:660px; top:445px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+ a light gray T-shirt and a black belt. He liked his new clothes, and he                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:475px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+decided to wear them home.                                    </p>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:106px; width:202px; top:144px; left:42px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_rev_ex2.jpg" nombre="image2;" style="height:106px; width:202px;"></div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:505px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+When they went back to the station, they saw Jim's grandfather, but it was                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:667px; top:535px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+very funny because his grandpa's pants were big and green with pockets                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:565px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+above the knees. He was also wearing a light gray T-shirt and a black belt.                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:654px; top:595px; left:42px; position:absolute;" seleccionable="false">
+                                    <p>
+His clothes were the same as Jim's.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:24px; width:413px; top:65px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+Choose the best name for the story.                                    </p>
+                        </div>
+
+                                                <div class="combo" style="height:28px; width:204.45px; top:172px; left:249px; position:absolute;">
+                       <select id="j6WUT5" class="combo_KidsBox comboComponent" direcciondespliegue="debajo" correcto="2" style="height:28px; width:204.45px; border:1px solid #888;" data-sequence="17549"><option rel="default" id="optionCheck_j6WUT5-1">...</option><option id="optionCheck_j6WUT5_0"><text id="xxUEr">Streets ahead </text></option><option id="optionCheck_j6WUT5_1"><text id="WHgdS">Capital cities </text></option><option id="optionCheck_j6WUT5_2"><text id="w8nGG">The latest fashion</text></option></select><div class="elementOn" style="left:166px;"></div>
+                      </div>
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_091b976875854de1e6e0d9b810b880e4">
+<div>
+
+
+
+
+
+          <div class="container" style="height:1060px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_cfabf93d-2412-4648-b929-58bc69d84dc3" class="testLC_KidsBox testLCComponent" style="height:1060px;">
+                <div id="fad872f165df9afd161765d2693f827e_gqgelK" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 1060px; width: 740px; top: 0px; left: 0px;" data-activity-type="T7-Matching" data-type="T7-Matching">
+                    <div class="marcoKidsBox " style="height: 1017px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 885px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 835px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:39px; width:219.9px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Read and match.</b>                                    </p>
+                        </div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:95.5px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="nnsMB" nombre="Flechas 1" id="divInitPoint_o1tQeu" border="1px solid #000" urlrecurso="undefined" data-sequence="9556">
+                                    <p>
+What do you call an elephant at the North Pole?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="o1tQeu" correcto="ttsSMx" style="left:331px; top:98px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:176.5px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="trpn5" nombre="Flechas 2" id="divInitPoint_qLUToo" border="1px solid #000" urlrecurso="undefined" data-sequence="17656">
+                                    <p>
+What did the scarf say to the hat?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="qLUToo" correcto="pgXhUw" style="left:331px; top:179px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:257px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="NP6H2" nombre="Flechas 3" id="divInitPoint_TK5W6P" border="1px solid #000" urlrecurso="undefined" data-sequence="25756">
+                                    <p>
+Why do birds fly south in the winter?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="TK5W6P" correcto="WK6w4y" style="left:331px; top:260px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:337px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="2PIyy" nombre="Flechas 4" id="divInitPoint_2lJkLL" border="1px solid #000" urlrecurso="undefined" data-sequence="33756">
+                                    <p>
+What do we have to break before we can use it?                                     </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="2lJkLL" correcto="Tl8GTU" style="left:331px; top:340px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:417px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="FwsVh" nombre="Flechas 5" id="divInitPoint_sOBlun" border="1px solid #000" urlrecurso="undefined" data-sequence="41756">
+                                    <p>
+What kind of key opens a banana?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="sOBlun" correcto="8PtmcM" style="left:331px; top:420px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:497px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="wwhLc" nombre="Flechas 6" id="divInitPoint_XW7s3v" border="1px solid #000" urlrecurso="undefined" data-sequence="49756">
+                                    <p>
+What do you get if you cross a kangaroo with an elephant?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="XW7s3v" correcto="BumdLp" style="left:331px; top:500px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:577px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="kJJg8" nombre="Flechas 7" id="divInitPoint_YWpeOs" border="1px solid #000" urlrecurso="undefined" data-sequence="57756">
+                                    <p>
+What do you call an elephant with a carrot in each ear?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="YWpeOs" correcto="n8Qyub" style="left:331px; top:580px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:35px; width:270px; top:658.5px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="MPbrS" nombre="Flechas 8" id="divInitPoint_1G4pqF" border="1px solid #000" urlrecurso="undefined" data-sequence="65856">
+                                    <p>
+What do sea monsters eat?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="1G4pqF" correcto="q6b6p5" style="left:331px; top:652px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:725px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="8ekjc" nombre="Flechas 9" id="divInitPoint_pL1H6B" border="1px solid #000" urlrecurso="undefined" data-sequence="72556">
+                                    <p>
+How far can you walk into the woods?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="pL1H6B" correcto="tUkUrj" style="left:331px; top:728px; position:absolute;"></div>
+
+
+
+                       <div class="origenFlechas_KidsBox origenFlechasComponent ConTexto" style="height:55px; width:270px; top:806px; left:56px; position:absolute;" ejemplo="false" urlmp3="undefined" idtexto="1TyGE" nombre="Flechas 10" id="divInitPoint_XTkqKX" border="1px solid #000" urlrecurso="undefined" data-sequence="80656">
+                                    <p>
+What's the best thing to put into ice cream?                                    </p>
+                        </div>
+
+                        <div class="divInitPointFlechas" id="XTkqKX" correcto="3XCX6L" style="left:331px; top:809px; position:absolute;"></div>
+
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:46px; top:97px; left:455px; position:absolute;" id="n8Qyub" data-sequence="10255"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:46px; top:178px; left:455px; position:absolute;" id="8PtmcM" data-sequence="18355"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:259px; left:455px; position:absolute;" id="3XCX6L" data-sequence="26455"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:339px; left:455px; position:absolute;" id="ttsSMx" data-sequence="34455"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:419px; left:455px; position:absolute;" id="WK6w4y" data-sequence="42455"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:499px; left:455px; position:absolute;" id="tUkUrj" data-sequence="50455"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:579px; left:455px; position:absolute;" id="pgXhUw" data-sequence="58455"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:653px; left:455px; position:absolute;" id="BumdLp" data-sequence="65855"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:727px; left:455px; position:absolute;" id="Tl8GTU" data-sequence="73255"></div>
+
+
+                       <div class="destinoFlechaComponent" style="height:47px; width:45px; top:808px; left:455px; position:absolute;" id="q6b6p5" data-sequence="81355"></div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:112px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>1</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:193px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>2</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:273.5px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>3</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:353.5px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>4</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:433.5px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>5</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:513.5px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>6</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:593.5px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>7</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:665px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>8</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:740.5px; left:30px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>9</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:22px; width:35.15px; top:822.5px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>10</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:49px; width:226px; top:98.5px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+Anything you want because it can't hear you!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:208px; top:192.5px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+A monkey!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:27px; width:208px; top:271px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+A spoon!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:208px; top:352px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+Lost!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:49px; width:208px; top:420px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+Because it's easier than walking!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:49px; width:220px; top:500px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+Half way. Then you're walking out of the wood.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:49px; width:208px; top:580px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+You go on ahead, I'll just hang around.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:208px; top:666px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+Big holes in Australia!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:27px; width:208px; top:739px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+An egg.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:25px; width:208px; top:821px; left:512px; position:absolute;" seleccionable="false">
+                                    <p>
+Fish and ships.                                    </p>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_d62a4735f97b3c23850e2629160f72a2">
+<div>
+
+
+
+
+
+          <div class="container" style="height:850px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_90fa23a0-f4eb-44b6-8d66-5af9a7acc32c" class="testLC_KidsBox testLCComponent" style="height:850px;">
+                <div id="fad872f165df9afd161765d2693f827e_jiXCxO" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 850px; width: 740px; top: 0px; left: 0px;" data-activity-type="T6-TextEntryGapfill" data-type="T6-TextEntryGapfill">
+                    <div class="marcoKidsBox " style="height: 807px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 675px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 625px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:35px; width:539px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Read and complete.</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:416px; top:93px; left:185px; position:absolute;" seleccionable="false">
+                                    <p>
+are short pants. We wear them in summer                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:374px; top:134px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+Hindi, French and Portuguese are different                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:80px; top:134px; left:565px; position:absolute;" seleccionable="false">
+                                    <p>
+.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:85px; top:175px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+We wear                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:164px; top:175px; left:247px; position:absolute;" seleccionable="false">
+                                    <p>
+on our hands.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:186px; top:216px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+A hundred years is a                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:18px; top:216px; left:364px; position:absolute;" seleccionable="false">
+                                    <p>
+.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:87px; top:257px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+He's just                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:304px; top:257px; left:224px; position:absolute;" seleccionable="false">
+                                    <p>
+his coat on. He's going out.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:97px; top:298px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+Africa is a                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:77px; top:298px; left:288px; position:absolute;" seleccionable="false">
+                                    <p>
+.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:159px; top:339px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+You might have a                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:415px; top:339px; left:323px; position:absolute;" seleccionable="false">
+                                    <p>
+inside your jacket. You can carry things in it.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:391px; top:380px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+The cities of London, Paris, and Rome are all                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:20px; top:380px; left:560px; position:absolute;" seleccionable="false">
+                                    <p>
+.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:627px; top:421px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+We use this to close our shirts and coats. It can be different shapes and                                     </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:81px; top:462px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+colours.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:108px; top:503px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+We wear a                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:526px; top:503px; left:230px; position:absolute;" seleccionable="false">
+                                    <p>
+at the top of our pants or jeans so they don't fall down.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:108px; top:544px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+"What                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:288px; top:544px; left:260px; position:absolute;" seleccionable="false">
+                                    <p>
+is she?" "She's Chinese."                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:404px; top:585px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+Oh, no! It's just started to rain, and I've left my                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:108px; top:585px; left:592px; position:absolute;" seleccionable="false">
+                                    <p>
+at home!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:499px; top:626px; left:45px; position:absolute;" seleccionable="false">
+                                    <p>
+Special clothes to protect us. A firefighter wears one.                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:93px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>1</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:134px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>2</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:175px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>3</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:216px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>4</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:257px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>5</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:298px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>6</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:339px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>7</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:380px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>8</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:16px; top:421px; left:20px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>9</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:24px; top:503px; left:12px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>10</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:24px; top:626px; left:12px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>13</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:24px; top:585px; left:12px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>12</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:23px; width:28px; top:544px; left:12px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>11</b>                                    </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:131px; top:93px; left:45px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:131px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="Shorts|||SHORTS" id="YuEYYc" data-sequence="9345" maxlength="15"><div class="elementOn" style="left:57.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:140px; top:134px; left:419px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:140px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="languages|||LANGUAGES" id="mfTG4e" data-sequence="13819" maxlength="15"><div class="elementOn" style="left:62px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:109px; top:175px; left:132px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:109px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="gloves|||GLOVES" id="YrVnpX" data-sequence="17632" maxlength="15"><div class="elementOn" style="left:46.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:131px; top:216px; left:229px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:131px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="century|||CENTURY" id="Y7u3Ei" data-sequence="21829" maxlength="15"><div class="elementOn" style="left:57.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:82px; top:257px; left:137px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:82px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="put|||PUT" id="RwP8pu" data-sequence="25837" maxlength="15"><div class="elementOn" style="left:33px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:149px; top:298px; left:139px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:149px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="continent|||CONTINENT" id="C2YtXO" data-sequence="29939" maxlength="15"><div class="elementOn" style="left:66.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:115px; top:339px; left:202px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:115px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="pocket|||POCKET" id="e3hGQt" data-sequence="34102" maxlength="15"><div class="elementOn" style="left:49.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:127px; top:380px; left:429px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:127px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="capitals|||CAPITALS" id="bRXimK" data-sequence="38429" maxlength="15"><div class="elementOn" style="left:55.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:148px; top:462px; left:124px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:148px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="button|||BUTTON" id="rqCqyu" data-sequence="46324" maxlength="15"><div class="elementOn" style="left:66px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:79px; top:503px; left:147px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:79px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="belt|||BELT" id="e8TXDB" data-sequence="50447" maxlength="15"><div class="elementOn" style="left:31.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:154px; top:544px; left:106px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:154px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="nationality|||NATIONALITY" id="i5F512" data-sequence="54506" maxlength="15"><div class="elementOn" style="left:69px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:135px; top:585px; left:446px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:135px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="umbrella|||UMBRELLA" id="7SlUEL" data-sequence="58946" maxlength="15"><div class="elementOn" style="left:59.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:115px; top:626px; left:510px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:115px; resize:none;" seleccionable="" difmayusc="true" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="false" type="text" soltext="uniform|||UNIFORM" id="d85oI4" data-sequence="63110" maxlength="15"><div class="elementOn" style="left:49.5px;"></div>
+                      </div>
+
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_6a5baae9186a6fb3ad179c58b1cd916b">
+<div>
+
+
+
+
+
+          <div class="container" style="height:780px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_06f3c1bb-0d72-4992-aad9-8308df0332ac" class="testLC_KidsBox testLCComponent" style="height:780px;">
+                <div id="fad872f165df9afd161765d2693f827e_d3h8Ug" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 780px; width: 740px; top: 0px; left: 0px;" data-activity-type="T14-Crossword" data-type="T14-Crossword">
+                    <div class="marcoKidsBox " style="height: 737px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 605px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 555px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:40px; width:588px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Complete the crossword puzzle.</b>                                    </p>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:377px; width:145px; top:98px; left:30px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_rev_ex5_1_02.png" nombre="wb2;" style="height:377px; width:145px;"></div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:322px; width:108px; top:125.5px; left:55px; position:absolute;" seleccionable="false">
+                                    <p>
+languages                                    </p>
+                                    <p>
+pocket                                    </p>
+                                    <p>
+belt                                    </p>
+                                    <p>
+nationality                                    </p>
+                                    <p>
+shorts                                    </p>
+                                    <p>
+umbrella                                    </p>
+                                    <p>
+capitals                                    </p>
+                                    <p>
+uniform                                    </p>
+                                    <p>
+gloves                                    </p>
+                                    <p>
+put                                    </p>
+                                    <p>
+continent                                    </p>
+                                    <p>
+button                                    </p>
+                                    <p>
+century                                    </p>
+                        </div>
+
+
+                                <span id="letra_2md5Lo" class="numPalabraComponent" style="left:-19px; top:0px; line-height:34px;width:17px;">
+                                    2                                </span>
+                                <input id="letra_2md5Lo_0" class="letraComponent horizontal" maxlength="1" style="left:0px; top:0px;" data-posicionenpalabra="0" data-coordx="0" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="L" data-numero="2"><input id="letra_2md5Lo_1" class="letraComponent horizontal" maxlength="1" style="left:36px; top:0px;" data-posicionenpalabra="1" data-coordx="1" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="A" data-numero="2"><input id="letra_2md5Lo_2" class="letraComponent horizontal" maxlength="1" style="left:72px; top:0px;" data-posicionenpalabra="2" data-coordx="2" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="N" data-numero="2"><input id="letra_2md5Lo_3" class="letraComponent horizontal" maxlength="1" style="left:108px; top:0px;" data-posicionenpalabra="3" data-coordx="3" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="G" data-numero="2"><input id="letra_2md5Lo_4" class="letraComponent horizontal" maxlength="1" style="left:144px; top:0px;" data-posicionenpalabra="4" data-coordx="4" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="U" data-numero="2"><input id="letra_2md5Lo_5" class="letraComponent horizontal" maxlength="1" style="left:180px; top:0px;" data-posicionenpalabra="5" data-coordx="5" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="A" data-numero="2"><input id="letra_2md5Lo_6" class="letraComponent horizontal" maxlength="1" style="left:216px; top:0px;" data-posicionenpalabra="6" data-coordx="6" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="G" data-numero="2"><input id="letra_2md5Lo_7" class="letraComponent horizontal" maxlength="1" style="left:252px; top:0px;" data-posicionenpalabra="7" data-coordx="7" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="E" data-numero="2"><input id="letra_2md5Lo_8" class="letraComponent horizontal" maxlength="1" style="left:288px; top:0px;" data-posicionenpalabra="8" data-coordx="8" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="212px;" data-letra="S" data-numero="2"><span id="letra_YfjeDp" class="numPalabraComponent" style="left:17px; top:432px; line-height:34px;width:17px;">
+                                    12                                </span>
+                                <input id="letra_YfjeDp_0" class="letraComponent horizontal" maxlength="1" style="left:36px; top:432px;" data-posicionenpalabra="0" data-coordx="1" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="U" data-numero="12"><input id="letra_YfjeDp_1" class="letraComponent horizontal" maxlength="1" style="left:72px; top:432px;" data-posicionenpalabra="1" data-coordx="2" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="M" data-numero="12"><input id="letra_YfjeDp_2" class="letraComponent horizontal" maxlength="1" style="left:108px; top:432px;" data-posicionenpalabra="2" data-coordx="3" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="B" data-numero="12"><input id="letra_YfjeDp_3" class="letraComponent horizontal" maxlength="1" style="left:144px; top:432px;" data-posicionenpalabra="3" data-coordx="4" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="R" data-numero="12"><input id="letra_YfjeDp_4" class="letraComponent horizontal" maxlength="1" style="left:180px; top:432px;" data-posicionenpalabra="4" data-coordx="5" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="E" data-numero="12"><input id="letra_YfjeDp_5" class="letraComponent horizontal" maxlength="1" style="left:216px; top:432px;" data-posicionenpalabra="5" data-coordx="6" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="L" data-numero="12"><input id="letra_YfjeDp_6" class="letraComponent horizontal" maxlength="1" style="left:252px; top:432px;" data-posicionenpalabra="6" data-coordx="7" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="L" data-numero="12"><input id="letra_YfjeDp_7" class="letraComponent horizontal" maxlength="1" style="left:288px; top:432px;" data-posicionenpalabra="7" data-coordx="8" data-coordy="12" data-toppalabra="547px;" data-leftpalabra="250px;" data-letra="A" data-numero="12"><span id="letra_olEFbb" class="numPalabraComponent" style="left:108px; top:-19px; line-height:17px;width:34px;">
+                                    3                                </span>
+                                <input id="letra_olEFbb_0" class="letraComponent vertical" maxlength="1" style="left:108px; top:0px;" data-posicionenpalabra="0" data-coordx="3" data-coordy="0" data-toppalabra="104px;" data-leftpalabra="321px;" data-letra="G" data-numero="3"><input id="letra_olEFbb_1" class="letraComponent vertical" maxlength="1" style="left:108px; top:36px;" data-posicionenpalabra="1" data-coordx="3" data-coordy="1" data-toppalabra="104px;" data-leftpalabra="321px;" data-letra="L" data-numero="3"><input id="letra_olEFbb_2" class="letraComponent vertical" maxlength="1" style="left:108px; top:72px;" data-posicionenpalabra="2" data-coordx="3" data-coordy="2" data-toppalabra="104px;" data-leftpalabra="321px;" data-letra="O" data-numero="3"><input id="letra_olEFbb_3" class="letraComponent vertical" maxlength="1" style="left:108px; top:108px;" data-posicionenpalabra="3" data-coordx="3" data-coordy="3" data-toppalabra="104px;" data-leftpalabra="321px;" data-letra="V" data-numero="3"><input id="letra_olEFbb_4" class="letraComponent vertical" maxlength="1" style="left:108px; top:144px;" data-posicionenpalabra="4" data-coordx="3" data-coordy="4" data-toppalabra="104px;" data-leftpalabra="321px;" data-letra="E" data-numero="3"><input id="letra_olEFbb_5" class="letraComponent vertical" maxlength="1" style="left:108px; top:180px;" data-posicionenpalabra="5" data-coordx="3" data-coordy="5" data-toppalabra="104px;" data-leftpalabra="321px;" data-letra="S" data-numero="3"><span id="letra_wbIdrI" class="numPalabraComponent" style="left:0px; top:89px; line-height:17px;width:34px;">
+                                    8                                </span>
+                                <input id="letra_wbIdrI_0" class="letraComponent vertical" maxlength="1" style="left:0px; top:108px;" data-posicionenpalabra="0" data-coordx="0" data-coordy="3" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="C" data-numero="8"><input id="letra_wbIdrI_1" class="letraComponent vertical" maxlength="1" style="left:0px; top:144px;" data-posicionenpalabra="1" data-coordx="0" data-coordy="4" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="A" data-numero="8"><input id="letra_wbIdrI_2" class="letraComponent vertical" maxlength="1" style="left:0px; top:180px;" data-posicionenpalabra="2" data-coordx="0" data-coordy="5" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="P" data-numero="8"><input id="letra_wbIdrI_3" class="letraComponent vertical" maxlength="1" style="left:0px; top:216px;" data-posicionenpalabra="3" data-coordx="0" data-coordy="6" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="I" data-numero="8"><input id="letra_wbIdrI_4" class="letraComponent vertical" maxlength="1" style="left:0px; top:252px;" data-posicionenpalabra="4" data-coordx="0" data-coordy="7" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="T" data-numero="8"><input id="letra_wbIdrI_5" class="letraComponent vertical" maxlength="1" style="left:0px; top:288px;" data-posicionenpalabra="5" data-coordx="0" data-coordy="8" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="A" data-numero="8"><input id="letra_wbIdrI_6" class="letraComponent vertical" maxlength="1" style="left:0px; top:324px;" data-posicionenpalabra="6" data-coordx="0" data-coordy="9" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="L" data-numero="8"><input id="letra_wbIdrI_7" class="letraComponent vertical" maxlength="1" style="left:0px; top:360px;" data-posicionenpalabra="7" data-coordx="0" data-coordy="10" data-toppalabra="217px;" data-leftpalabra="213px;" data-letra="S" data-numero="8"><span id="letra_cIxoFb" class="numPalabraComponent" style="left:360px; top:-19px; line-height:17px;width:34px;">
+                                    9                                </span>
+                                <input id="letra_cIxoFb_0" class="letraComponent vertical" maxlength="1" style="left:360px; top:0px;" data-posicionenpalabra="0" data-coordx="10" data-coordy="0" data-toppalabra="106px;" data-leftpalabra="578px;" data-letra="B" data-numero="9"><input id="letra_cIxoFb_1" class="letraComponent vertical" maxlength="1" style="left:360px; top:36px;" data-posicionenpalabra="1" data-coordx="10" data-coordy="1" data-toppalabra="106px;" data-leftpalabra="578px;" data-letra="U" data-numero="9"><input id="letra_cIxoFb_2" class="letraComponent vertical" maxlength="1" style="left:360px; top:72px;" data-posicionenpalabra="2" data-coordx="10" data-coordy="2" data-toppalabra="106px;" data-leftpalabra="578px;" data-letra="T" data-numero="9"><input id="letra_cIxoFb_3" class="letraComponent vertical" maxlength="1" style="left:360px; top:108px;" data-posicionenpalabra="3" data-coordx="10" data-coordy="3" data-toppalabra="106px;" data-leftpalabra="578px;" data-letra="T" data-numero="9"><input id="letra_cIxoFb_4" class="letraComponent vertical" maxlength="1" style="left:360px; top:144px;" data-posicionenpalabra="4" data-coordx="10" data-coordy="4" data-toppalabra="106px;" data-leftpalabra="578px;" data-letra="O" data-numero="9"><input id="letra_cIxoFb_5" class="letraComponent vertical" maxlength="1" style="left:360px; top:180px;" data-posicionenpalabra="5" data-coordx="10" data-coordy="5" data-toppalabra="106px;" data-leftpalabra="578px;" data-letra="N" data-numero="9"><span id="letra_C6EuJN" class="numPalabraComponent" style="left:53px; top:252px; line-height:34px;width:17px;">
+                                    11                                </span>
+                                <input id="letra_C6EuJN_0" class="letraComponent horizontal" maxlength="1" style="left:72px; top:252px;" data-posicionenpalabra="0" data-coordx="2" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="N" data-numero="11"><input id="letra_C6EuJN_1" class="letraComponent horizontal" maxlength="1" style="left:108px; top:252px;" data-posicionenpalabra="1" data-coordx="3" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="A" data-numero="11"><input id="letra_C6EuJN_2" class="letraComponent horizontal" maxlength="1" style="left:144px; top:252px;" data-posicionenpalabra="2" data-coordx="4" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="T" data-numero="11"><input id="letra_C6EuJN_3" class="letraComponent horizontal" maxlength="1" style="left:180px; top:252px;" data-posicionenpalabra="3" data-coordx="5" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="I" data-numero="11"><input id="letra_C6EuJN_4" class="letraComponent horizontal" maxlength="1" style="left:216px; top:252px;" data-posicionenpalabra="4" data-coordx="6" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="O" data-numero="11"><input id="letra_C6EuJN_5" class="letraComponent horizontal" maxlength="1" style="left:252px; top:252px;" data-posicionenpalabra="5" data-coordx="7" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="N" data-numero="11"><input id="letra_C6EuJN_6" class="letraComponent horizontal" maxlength="1" style="left:288px; top:252px;" data-posicionenpalabra="6" data-coordx="8" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="A" data-numero="11"><input id="letra_C6EuJN_7" class="letraComponent horizontal" maxlength="1" style="left:324px; top:252px;" data-posicionenpalabra="7" data-coordx="9" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="L" data-numero="11"><input id="letra_C6EuJN_8" class="letraComponent horizontal" maxlength="1" style="left:360px; top:252px;" data-posicionenpalabra="8" data-coordx="10" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="I" data-numero="11"><input id="letra_C6EuJN_9" class="letraComponent horizontal" maxlength="1" style="left:396px; top:252px;" data-posicionenpalabra="9" data-coordx="11" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="T" data-numero="11"><input id="letra_C6EuJN_10" class="letraComponent horizontal" maxlength="1" style="left:432px; top:252px;" data-posicionenpalabra="10" data-coordx="12" data-coordy="7" data-toppalabra="362px;" data-leftpalabra="286px;" data-letra="Y" data-numero="11"><span id="letra_nQCfKh" class="numPalabraComponent" style="left:180px; top:53px; line-height:17px;width:34px;">
+                                    5                                </span>
+                                <input id="letra_nQCfKh_0" class="letraComponent vertical" maxlength="1" style="left:180px; top:72px;" data-posicionenpalabra="0" data-coordx="5" data-coordy="2" data-toppalabra="178px;" data-leftpalabra="395px;" data-letra="P" data-numero="5"><input id="letra_nQCfKh_1" class="letraComponent vertical" maxlength="1" style="left:180px; top:108px;" data-posicionenpalabra="1" data-coordx="5" data-coordy="3" data-toppalabra="178px;" data-leftpalabra="395px;" data-letra="U" data-numero="5"><input id="letra_nQCfKh_2" class="letraComponent vertical" maxlength="1" style="left:180px; top:144px;" data-posicionenpalabra="2" data-coordx="5" data-coordy="4" data-toppalabra="178px;" data-leftpalabra="395px;" data-letra="T" data-numero="5"><span id="letra_QyC6Pk" class="numPalabraComponent" style="left:53px; top:144px; line-height:34px;width:17px;">
+                                    10                                </span>
+                                <input id="letra_QyC6Pk_0" class="letraComponent horizontal" maxlength="1" style="left:72px; top:144px;" data-posicionenpalabra="0" data-coordx="2" data-coordy="4" data-toppalabra="250px;" data-leftpalabra="285px;" data-letra="B" data-numero="10"><input id="letra_QyC6Pk_1" class="letraComponent horizontal" maxlength="1" style="left:108px; top:144px;" data-posicionenpalabra="1" data-coordx="3" data-coordy="4" data-toppalabra="250px;" data-leftpalabra="285px;" data-letra="E" data-numero="10"><input id="letra_QyC6Pk_2" class="letraComponent horizontal" maxlength="1" style="left:144px; top:144px;" data-posicionenpalabra="2" data-coordx="4" data-coordy="4" data-toppalabra="250px;" data-leftpalabra="285px;" data-letra="L" data-numero="10"><input id="letra_QyC6Pk_3" class="letraComponent horizontal" maxlength="1" style="left:180px; top:144px;" data-posicionenpalabra="3" data-coordx="5" data-coordy="4" data-toppalabra="250px;" data-leftpalabra="285px;" data-letra="T" data-numero="10"><span id="letra_mKLYgq" class="numPalabraComponent" style="left:-19px; top:360px; line-height:34px;width:17px;">
+                                    1                                </span>
+                                <input id="letra_mKLYgq_0" class="letraComponent horizontal example" maxlength="1" style="left:0px; top:360px;" data-posicionenpalabra="0" data-coordx="0" data-coordy="10" data-toppalabra="474px;" data-leftpalabra="213px;" data-letra="S" data-numero="1"><input id="letra_mKLYgq_1" class="letraComponent horizontal example" maxlength="1" style="left:36px; top:360px;" data-posicionenpalabra="1" data-coordx="1" data-coordy="10" data-toppalabra="474px;" data-leftpalabra="213px;" data-letra="H" data-numero="1"><input id="letra_mKLYgq_2" class="letraComponent horizontal example" maxlength="1" style="left:72px; top:360px;" data-posicionenpalabra="2" data-coordx="2" data-coordy="10" data-toppalabra="474px;" data-leftpalabra="213px;" data-letra="O" data-numero="1"><input id="letra_mKLYgq_3" class="letraComponent horizontal example" maxlength="1" style="left:108px; top:360px;" data-posicionenpalabra="3" data-coordx="3" data-coordy="10" data-toppalabra="474px;" data-leftpalabra="213px;" data-letra="R" data-numero="1"><input id="letra_mKLYgq_4" class="letraComponent horizontal example" maxlength="1" style="left:144px; top:360px;" data-posicionenpalabra="4" data-coordx="4" data-coordy="10" data-toppalabra="474px;" data-leftpalabra="213px;" data-letra="T" data-numero="1"><input id="letra_mKLYgq_5" class="letraComponent horizontal example" maxlength="1" style="left:180px; top:360px;" data-posicionenpalabra="5" data-coordx="5" data-coordy="10" data-toppalabra="474px;" data-leftpalabra="213px;" data-letra="S" data-numero="1"><span id="letra_BqIFi3" class="numPalabraComponent" style="left:161px; top:72px; line-height:34px;width:17px;">
+                                    7                                </span>
+                                <input id="letra_BqIFi3_0" class="letraComponent horizontal" maxlength="1" style="left:180px; top:72px;" data-posicionenpalabra="0" data-coordx="5" data-coordy="2" data-toppalabra="179px;" data-leftpalabra="396px;" data-letra="P" data-numero="7"><input id="letra_BqIFi3_1" class="letraComponent horizontal" maxlength="1" style="left:216px; top:72px;" data-posicionenpalabra="1" data-coordx="6" data-coordy="2" data-toppalabra="179px;" data-leftpalabra="396px;" data-letra="O" data-numero="7"><input id="letra_BqIFi3_2" class="letraComponent horizontal" maxlength="1" style="left:252px; top:72px;" data-posicionenpalabra="2" data-coordx="7" data-coordy="2" data-toppalabra="179px;" data-leftpalabra="396px;" data-letra="C" data-numero="7"><input id="letra_BqIFi3_3" class="letraComponent horizontal" maxlength="1" style="left:288px; top:72px;" data-posicionenpalabra="3" data-coordx="8" data-coordy="2" data-toppalabra="179px;" data-leftpalabra="396px;" data-letra="K" data-numero="7"><input id="letra_BqIFi3_4" class="letraComponent horizontal" maxlength="1" style="left:324px; top:72px;" data-posicionenpalabra="4" data-coordx="9" data-coordy="2" data-toppalabra="179px;" data-leftpalabra="396px;" data-letra="E" data-numero="7"><input id="letra_BqIFi3_5" class="letraComponent horizontal" maxlength="1" style="left:360px; top:72px;" data-posicionenpalabra="5" data-coordx="10" data-coordy="2" data-toppalabra="179px;" data-leftpalabra="396px;" data-letra="T" data-numero="7"><span id="letra_6sQDYb" class="numPalabraComponent" style="left:72px; top:197px; line-height:17px;width:34px;">
+                                    13                                </span>
+                                <input id="letra_6sQDYb_0" class="letraComponent vertical" maxlength="1" style="left:72px; top:216px;" data-posicionenpalabra="0" data-coordx="2" data-coordy="6" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="U" data-numero="13"><input id="letra_6sQDYb_1" class="letraComponent vertical" maxlength="1" style="left:72px; top:252px;" data-posicionenpalabra="1" data-coordx="2" data-coordy="7" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="N" data-numero="13"><input id="letra_6sQDYb_2" class="letraComponent vertical" maxlength="1" style="left:72px; top:288px;" data-posicionenpalabra="2" data-coordx="2" data-coordy="8" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="I" data-numero="13"><input id="letra_6sQDYb_3" class="letraComponent vertical" maxlength="1" style="left:72px; top:324px;" data-posicionenpalabra="3" data-coordx="2" data-coordy="9" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="F" data-numero="13"><input id="letra_6sQDYb_4" class="letraComponent vertical" maxlength="1" style="left:72px; top:360px;" data-posicionenpalabra="4" data-coordx="2" data-coordy="10" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="O" data-numero="13"><input id="letra_6sQDYb_5" class="letraComponent vertical" maxlength="1" style="left:72px; top:396px;" data-posicionenpalabra="5" data-coordx="2" data-coordy="11" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="R" data-numero="13"><input id="letra_6sQDYb_6" class="letraComponent vertical" maxlength="1" style="left:72px; top:432px;" data-posicionenpalabra="6" data-coordx="2" data-coordy="12" data-toppalabra="327px;" data-leftpalabra="286px;" data-letra="M" data-numero="13"><span id="letra_FXWoET" class="numPalabraComponent" style="left:252px; top:53px; line-height:17px;width:34px;">
+                                    6                                </span>
+                                <input id="letra_FXWoET_0" class="letraComponent vertical" maxlength="1" style="left:252px; top:72px;" data-posicionenpalabra="0" data-coordx="7" data-coordy="2" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="C" data-numero="6"><input id="letra_FXWoET_1" class="letraComponent vertical" maxlength="1" style="left:252px; top:108px;" data-posicionenpalabra="1" data-coordx="7" data-coordy="3" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="O" data-numero="6"><input id="letra_FXWoET_2" class="letraComponent vertical" maxlength="1" style="left:252px; top:144px;" data-posicionenpalabra="2" data-coordx="7" data-coordy="4" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="N" data-numero="6"><input id="letra_FXWoET_3" class="letraComponent vertical" maxlength="1" style="left:252px; top:180px;" data-posicionenpalabra="3" data-coordx="7" data-coordy="5" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="T" data-numero="6"><input id="letra_FXWoET_4" class="letraComponent vertical" maxlength="1" style="left:252px; top:216px;" data-posicionenpalabra="4" data-coordx="7" data-coordy="6" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="I" data-numero="6"><input id="letra_FXWoET_5" class="letraComponent vertical" maxlength="1" style="left:252px; top:252px;" data-posicionenpalabra="5" data-coordx="7" data-coordy="7" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="N" data-numero="6"><input id="letra_FXWoET_6" class="letraComponent vertical" maxlength="1" style="left:252px; top:288px;" data-posicionenpalabra="6" data-coordx="7" data-coordy="8" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="E" data-numero="6"><input id="letra_FXWoET_7" class="letraComponent vertical" maxlength="1" style="left:252px; top:324px;" data-posicionenpalabra="7" data-coordx="7" data-coordy="9" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="N" data-numero="6"><input id="letra_FXWoET_8" class="letraComponent vertical" maxlength="1" style="left:252px; top:360px;" data-posicionenpalabra="8" data-coordx="7" data-coordy="10" data-toppalabra="180px;" data-leftpalabra="469px;" data-letra="T" data-numero="6"><span id="letra_NT3uD2" class="numPalabraComponent" style="left:432px; top:17px; line-height:17px;width:34px;">
+                                    4                                </span>
+                                <input id="letra_NT3uD2_0" class="letraComponent vertical" maxlength="1" style="left:432px; top:36px;" data-posicionenpalabra="0" data-coordx="12" data-coordy="1" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="C" data-numero="4"><input id="letra_NT3uD2_1" class="letraComponent vertical" maxlength="1" style="left:432px; top:72px;" data-posicionenpalabra="1" data-coordx="12" data-coordy="2" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="E" data-numero="4"><input id="letra_NT3uD2_2" class="letraComponent vertical" maxlength="1" style="left:432px; top:108px;" data-posicionenpalabra="2" data-coordx="12" data-coordy="3" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="N" data-numero="4"><input id="letra_NT3uD2_3" class="letraComponent vertical" maxlength="1" style="left:432px; top:144px;" data-posicionenpalabra="3" data-coordx="12" data-coordy="4" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="T" data-numero="4"><input id="letra_NT3uD2_4" class="letraComponent vertical" maxlength="1" style="left:432px; top:180px;" data-posicionenpalabra="4" data-coordx="12" data-coordy="5" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="U" data-numero="4"><input id="letra_NT3uD2_5" class="letraComponent vertical" maxlength="1" style="left:432px; top:216px;" data-posicionenpalabra="5" data-coordx="12" data-coordy="6" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="R" data-numero="4"><input id="letra_NT3uD2_6" class="letraComponent vertical" maxlength="1" style="left:432px; top:252px;" data-posicionenpalabra="6" data-coordx="12" data-coordy="7" data-toppalabra="144px;" data-leftpalabra="652px;" data-letra="Y" data-numero="4"></div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+<noscript data-type="activity" data-id="activity_6c4b52f71478fee8e97887cce95c2747">
+<div>
+
+
+
+
+
+          <div class="container" style="height:785px; width:740px; position:relative; margin:0 auto;">
+            <div id="test_41b4d442-e3d6-4f2e-9849-9ba4a2bd0c7a" class="testLC_KidsBox testLCComponent" style="height:785px;">
+                <div id="fad872f165df9afd161765d2693f827e_ep6kfr" class="itemTestLC_KidsBox itemTestLCComponent " style="height: 785px; width: 740px; top: 0px; left: 0px;" data-activity-type="T6-TextEntryGapfill" data-type="T6-TextEntryGapfill">
+                    <div class="marcoKidsBox " style="height: 742px;"></div>
+                    <div class="copyrightKidsBox "></div>
+                    <div class="tapaActivity" style="height: 610px;"></div>
+                    <div class="enviarComponent"><p>Save</p></div>
+                    <div class="disableActivity" style="height: 560px;"></div>
+                    <div class="solutionComponent"><p>
+
+
+
+See answers                    </p></div>
+
+                    	 	<div class="nextAnswer active"><p>See next answer</p></div>
+						  	<div class="allAnswers active"><p>See all answers</p></div>
+                    <div class="reiniciaComponent desactive"></div>
+                    <div class="comprobarComponent" intentos="2"><p>
+Check                    </p></div>
+                      <div class="nuevoIntentoComponent"><p>
+Try again                    </p></div>
+
+                        <div class="enunciado_KidsBox enunciadoComponent" style="height:46px; width:494.8px; top:20px; left:30px; position:absolute;">
+                                                           <p>
+<b>Look and write.</b>                                    </p>
+                        </div>
+
+                        <div class="elementoExterno_v2 elementoExtComponent" style="height:400px; width:400px; top:95px; left:170px; position:absolute;">
+
+                                <img src="resources/activities/kb2_l6_ab_u8_rev_ex5_2_01.jpg" nombre="imagen_EhBeJq;" style="height:400px; width:400px;"></div>
+
+                        <div class="feedback_KidsBox feedbackComponent act_positivo" style="display:none;position:absolute;">
+                                    <p>Well done!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_medio" style="display:none;position:absolute;">
+                                    <p>Try again!</p>
+                                    <div class="closeButton"></div>
+                        </div>
+                        <div class="feedback_KidsBox feedbackComponent act_negativo" style="display:none; position:absolute;">
+                                    <p>Check the correct answers.</p>
+                                    <div class="closeButton"></div>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:50px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>1</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:560px; left:680px; position:absolute;" seleccionable="false">
+                                    <p>
+!                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:110px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>2</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:170px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>3</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:230px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>4</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:290px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>5</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:350px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>6</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:521px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>4</b>                                    </p>
+                        </div>
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:45px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="f" id="DpPcSu" data-sequence="56045" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:106px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="l" id="3wIDh5" data-sequence="56106" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:167px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="y" id="XMIvDq" data-sequence="56167" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:228px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="i" id="YO6Dc7" data-sequence="56228" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:289px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="n" id="Pwexog" data-sequence="56289" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:348px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="g" id="Fjkc53" data-sequence="56348" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:459px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="h" id="3TjVOu" data-sequence="56459" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:516px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="i" id="437dgH" data-sequence="56516" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:573px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="g" id="DmBKud" data-sequence="56573" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    <div class="textoEditable" style="height:22px; width:41px; top:560px; left:630px; position:absolute; resize:none;">
+                    <input class="textoEditableConFondo_KidsBox textoEditableComponent" style="height:22px; width:41px; resize:none;" seleccionable="" difmayusc="false" ignorarespacios="false" enviarrespuesta="false" multilinea="false" tintartexto="true" type="text" soltext="h" id="vgtiQh" data-sequence="56630" maxlength="1"><div class="elementOn" style="left:12.5px;"></div>
+                      </div>
+
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:578px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>6</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:635px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>7</b>                                    </p>
+                        </div>
+
+                    
+                    <div class="texto_KidsBox textoComponent" style="height:30px; width:41px; top:515px; left:464px; position:absolute;" seleccionable="false">
+                                    <p>
+<b>7</b>                                    </p>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+ 
+</div>
+
+
+<script>if( typeof funcionalityActivity == 'function'){funcionalityActivity()};if( typeof isSimon == 'function'){ Simon.Main.init();}</script></noscript>
+
+
+
+
+                  <script src="commoncontents/ntxtmp/js/libs/jquery-2.1.1.min.js"></script><script src="trackingConfig.js"></script><script src="commoncontents/kidsBox/js/libs/mediaelement/mediaelement-and-player.js"></script><script src="commoncontents/kidsBox/js/netex/htmlActivity_min.js"></script><script src="trackingConfig.js"></script><script src="commoncontents/ntxtmp/js/libs/pointerEvents.js"></script><script src="commoncontents/ntxtmp/js/netex/ntxtmp_min.js"></script><script src="commoncontents/ntxtmp/js/netex/model/dbModel.js"></script><style>
+                .Wirisformula:not([width]) {
+                    vertical-align: middle !important;
+                    margin-bottom: -8px !important;
+                }
+            </style><style>
+                .mathquill_image {
+                    vertical-align: middle !important;
+                    margin-top: -3px !important;
+                }
+            </style></body></html>

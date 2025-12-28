@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="viewport" content="target-densitydpi=device-dpi, width=device-width"><!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">--><meta name="author" content="Netex"><meta name="dcterms.created" content="31-05-2017 10:27:49"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=Edge"><![endif]--><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/js/libs/mediaelement/mediaelementplayer.min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/css/kidsBox_min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/js/netex/htmlActivity/css/testLC_kidsBox_min.css"><link data-move-head="true" rel="stylesheet" href="commoncontents/kidsBox/css/translate.css"><title>Presentation plus</title><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/jquery-ui.min.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/normalize.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/libs/animate.min.css"><link rel="stylesheet" href="commoncontents/ntxtmp/js/netex/plugins/video/netexVideoSkin.css"><link rel="stylesheet" href="commoncontents/ntxtmp/js/netex/plugins/audio/netexAudioSkin.css"><link rel="stylesheet" href="commoncontents/ntxtmp/css/netex/ntxtmp_min.css"><meta name="learningmaker-version" content="4.19.1.9"></head><body data-course-id="CODE-69963-uTAPpR" class="teacher-package">
+
+            
+
+
+<div id="page-wrap" class="portrait">
+    <noscript id="gaTrackingConfig" data-ga-tracking-id="UA-8600104-1" data-ga-tracking-product-name="presentationplus" data-ga-tracking-course-name="kidsboxAE" data-ga-tracking-level-name="level6" data-ga-tracking-unit-name=""></noscript>
+
+<div id="main-menu-wrap">
+    <ul class="main-menu enabled" id="main-menu"><li class="main-menu-item home active">  
+            <a href="../index.html" title="Home" class="sprite"></a>
+        </li>
+        <li class="main-menu-item pupil-book active">
+            <span class="sprite" title="Student's Book"></span>
+            <ul class="navigator pupil-book-navigator"></ul></li>
+        <li class="main-menu-item activity-book">
+           <span class="sprite" title="Workbook"></span>
+            <ul class="navigator activity-book-navigator"></ul></li>
+        <li class="main-menu-item media">
+            <span class="sprite" title="Media Library"></span>
+            <ul class="sub-menu" id="sub-menu-media"><li class="sub-menu-item video-popup">    
+                    <span class="sprite" title="Videos"></span>
+                </li>
+                <li class="sub-menu-item audio-popup">   
+                    <span class="sprite" title="Extra Audio"></span>
+                </li>
+                <li class="sub-menu-item flashcard-popup">    
+                    <span class="sprite" title="Flashcards"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item resource-popup">
+            <span class="sprite" title="Resources"></span>
+        </li>
+        <li class="main-menu-item link-popup active">
+            <span class="sprite" title="Links"></span>
+        </li>
+        <li class="main-menu-item bookmark active">
+            <span class="sprite" title="Bookmarks"></span>
+            <ul class="sub-menu" id="sub-menu-bookmark"><li class="sub-menu-item return active">   
+                    <span class="sprite" title="Return"></span>
+                </li>
+                <li class="sub-menu-item add active">  
+                    <span class="sprite" title="Add bookmark"></span>
+                </li>
+                <li class="sub-menu-item list-popup active">   
+                    <span class="sprite" title="Bookmark list"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item note active">
+            <span class="sprite" title="Notes"></span>
+            <ul class="sub-menu" id="sub-menu-note"><li class="sub-menu-item add-note active">      
+                    <span class="sprite" title="Add Note"></span>
+                </li>
+                <li class="sub-menu-item add-attachment active">    
+                    <span class="sprite" title="Add Attachment"></span>
+                </li>
+            </ul></li>
+        <li class="main-menu-item mask active">
+            <span class="sprite" title="Mask"></span>
+        </li>
+        <li class="main-menu-item notepad active">
+            <span class="sprite" title="Notepad"></span>
+        </li>
+    </ul><div id="title-bar">
+                            <span class="sprite answer-key-toggle" title="Answer Key"></span>
+                <span class="sprite zoom zoom-in" title="Zoom In"></span>
+        <div id="answer-key-nav">
+            <ul></ul></div>
+    </div>
+    
+</div>
+    
+
+ 
+    <noscript data-type="popup" data-id="video-popup"> 
+
+        <div class="popup video-popup">
+            <span class="sprite close-popup"></span>
+            <h2 class="popup-title">Video</h2>
+
+            <div id="video-player-wrap">
+                <div id="video-player-placeholder"></div>
+                <div id="transcript-buttons" class="video hidden">
+                    <button id="toggle-transcript">Show transcript</button>
+                    <button id="transcript-highlight" class="sprite hidden"></button>
+                </div>
+            </div>
+            <div id="video-gallery-wrap">
+                <ul id="video-gallery"></ul></div>
+            <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </noscript> 
+
+    
+ 
+    <noscript data-type="popup" data-id="audio-popup"> 
+        <div class="popup audio-popup">
+                <span class="sprite close-popup"></span>
+            <h2 class="popup-title">Audio</h2>
+                <ul id="audio-gallery"><div class="audio-gallery-row">
+                                        </div>
+                </ul><div id="audio-player-wrap"></div>
+                <div id="transcript-buttons" class="audio hidden">
+                    <button id="toggle-transcript">Show transcript</button>
+                    <button id="transcript-highlight" class="sprite hidden"></button>
+                </div>
+                <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </noscript> 
+      
+    <noscript data-type="popup" data-id="flashcard-popup"> 
+<div class="popup flashcard-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Flashcards</h2>
+    
+    <div class="carousel">
+        <span class="sprite nav nav-prev enabled" id="prev-flashcard"></span>
+        <div class="carousel-content-wrap">
+            <ul class="carousel-content"></ul></div>
+        <span class="sprite nav nav-next enabled" id="next-flashcard"></span>
+    </div>
+</div>
+ 
+    </noscript> 
+  
+    
+    <noscript data-type="popup" data-id="link-popup"> 
+<div class="popup link-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Links</h2>
+    <ul id="list-link"><li class="link">
+                <a target="_blank" href="http://www.cambridgelms.org/primary/p/splash">
+            Cambridge LMS (online homework)        </a>
+    </li>
+
+    <li class="link">
+                <a target="_blank" href="http://www.cambridge.org/gb/cambridgeenglish/catalog/primary/kids-box-american-english-2nd-edition">
+            Kid’s Box website        </a>
+    </li>
+
+    <li class="link">
+                <a target="_blank" href="mailto:lms.support@cambridge.org">
+            Customer support        </a>
+    </li>
+    </ul><div class="buttons-wrap">
+        <button id="add-link-button" class="button">Add link</button>
+    </div>
+</div>
+ 
+    </noscript> 
+
+    <noscript data-type="dialog" id="new-link-dialog-template"> 
+        <div id="new-link-dialog">
+            Link name <br><input type="text" id="link-name" value=""><br>
+            Link address <br><input type="text" value="" id="link-address" placeholder="www."><br><div class="buttons-wrap">
+                <button id="new-link-button-accept" class="button">Accept</button>
+                <button id="new-link-button-cancel" class="button">Cancel</button>
+            </div>
+        </div>
+    </noscript>
+        
+
+     
+    <noscript data-type="popup" data-id="resource-popup"> 
+<div class="popup resource-popup">
+        <span class="sprite close-popup"></span>
+    <h2 class="popup-title">Resources</h2>
+    <ul><li class="resource">
+                <a target="_blank" href="resources/pdf/resources/irregular_verbs/irregular_verbs.pdf">
+            Irregular verbs 
+        </a>
+    </li>
+    </ul></div>
+ 
+    </noscript> 
+
+<noscript data-type="popup" data-id="pupil-popup"> 
+    <div class="popup pupil-popup ">
+        <h2 class="popup-title">Student's Book</h2>
+        <div class="carousel">
+            <span class="sprite  nav nav-prev enabled" id="prev-book-page"></span>
+            <div class="carousel-content-wrap">
+                <ul class="carousel-content"></ul></div>
+            <span class="sprite  nav nav-next enabled" id="next-book-page"></span>
+        </div>
+    </div>
+</noscript>
+<noscript data-type="popup" data-id="activity-popup"> 
+    <div class="popup activity-popup">
+        <h2 class="popup-title">Workbook</h2>
+        <div class="carousel">
+            <span class="sprite  nav nav-prev enabled" id="prev-book-page"></span>
+            <div class="carousel-content-wrap">
+                <ul class="carousel-content"><li class="page-thumb" data-book="activity" data-page-id="03280330e937d8cb1cd6452f6840c1c0">
+                            <span class="sprite page-bookmarked hidden"></span>
+                            <img src="resources/paginas/irregular_verbs/irregular_verbs_th.jpg"><div class="page-number">
+                                Page 88                            </div>
+                        </li>
+                                    </ul></div>
+            <span class="sprite  nav nav-next enabled" id="next-book-page"></span>
+        </div>
+    </div>
+</noscript>
+<noscript data-type="popup" data-id="bookmark-list-popup"> 
+    <div class="popup bookmark-list-popup">
+        <span class="sprite close-popup"></span>
+        <h2 class="popup-title">Bookmarks</h2>
+        <div id="bookmark-list">
+
+        </div>
+    </div>
+</noscript>
+
+
+    <div id="popupView" class="ntx-popup"></div>
+    <div id="pageView" class="content" touch-action="none" data-trans-out-forward="fadeOut" data-trans-out-rewind="fadeOut" data-trans-in="fadeIn"></div>
+    
+ <noscript data-page-title="irregular_verbs" data-page-number="88" data-type="content" data-book="activity" data-page-id="03280330e937d8cb1cd6452f6840c1c0">
+    
+    <span class="sprite nav-button" id="nav-prev"></span>
+    <div class="content-image-wrap" data-original-width="630">
+                
+        <div class="image-wrap">
+            <div class="draggable-image-wrap">
+                <img class="content-image" src="resources/paginas/irregular_verbs/irregular_verbs.jpg"><canvas id="page-canvas-03280330e937d8cb1cd6452f6840c1c0" class="page-canvas" width="630" height="1607.0857142857"></canvas></div>
+        </div>
+    </div>
+    <span class="sprite nav-button" id="nav-next"></span>
+
+
+    
+	</noscript>
+            
+        
+ 
+        
+    <div id="notepad-container" touch-action="none">
+        <canvas id="notepad-canvas-1" class="notepad-canvas"></canvas><canvas id="notepad-canvas-2" class="notepad-canvas"></canvas><canvas id="notepad-canvas-3" class="notepad-canvas"></canvas><span class="sprite close-popup"></span>
+        <div id="notepad-breadcrumb">
+            <span class="current-page">1</span> of 3
+        </div>
+        <span class="sprite nav-button active" id="notepad-nav-prev"></span>
+        <span class="sprite nav-button active" id="notepad-nav-next"></span>
+    </div>
+    <div id="draw-toolbar" class="dragable expanded active">
+        <div class="sprite toggle"></div>
+        <div class="draw-toolbar-content">
+            <div class="sprite drag"></div>
+            <div id="draw-tools-wrap">
+                <div class="sprite draw-tool pointer" data-tool="pointer" title=""></div>
+                <div class="sprite draw-tool pencil" data-tool="pencil" title="Pen">
+                    <div class="submenu pencil">
+                        <div class="submenu-item pencil-stroke small" data-size="6"></div>
+                        <div class="submenu-item pencil-stroke default" data-size="12"></div>
+                        <div class="submenu-item pencil-stroke big" data-size="40"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool marker" data-tool="marker" title="Highlighter">
+                    <div class="submenu marker">
+                        <div class="submenu-item marker-stroke small" data-size="6"></div>
+                        <div class="submenu-item marker-stroke default" data-size="12"></div>
+                        <div class="submenu-item marker-stroke big" data-size="40"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool rubber" data-tool="rubber" title="Eraser">
+                    <div class="submenu rubber">
+                        <div class="sprite submenu-item clear-all"></div>
+                        <div class="sprite submenu-item clear-line"></div>
+                    </div>
+                </div>
+                <div class="sprite draw-tool palette" data-tool="palette" title="Colour">
+                    <div class="submenu palette">
+                        <div class="submenu-item color" data-color="#fff" style="background-color:#fff"></div>
+                        <div class="submenu-item color" data-color="#000" style="background-color:#000"></div>
+                        <div class="submenu-item color" data-color="#ec6f34" style="background-color:#ec6f34"></div>
+                        <div class="submenu-item color" data-color="#EC1E24" style="background-color:#EC1E24"></div>
+                        <div class="submenu-item color" data-color="#FCF204" style="background-color:#FCF204"></div>
+                        <div class="submenu-item color" data-color="#3CB64C" style="background-color:#3CB64C"></div>
+                        <div class="submenu-item color" data-color="#04AEEC" style="background-color:#04AEEC"></div>
+                        <div class="submenu-item color" data-color="#242264" style="background-color:#242264"></div>
+                        <div class="submenu-item color" data-color="#951D87" style="background-color:#951D87"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="item-container">
+        <span class="sprite close-item-container"></span>
+        <div id="item-container-placeholder"></div>
+    </div>
+
+    <div id="activity-overlay" class="hidden">
+        <div id="activity-placeholder"></div>
+        <span class="sprite close-activity"></span>
+    </div>
+
+    <div id="audio-resource-player" class="hidden">
+        <div class="header">
+            <span class="sprite drag"></span>
+            <span class="sprite close"></span>
+        </div>
+        <div class="body">
+            <div id="audio-player-wrap"></div>
+            <div id="transcript-buttons" class="audio">
+                <button id="toggle-transcript">Show transcript</button>
+                <button id="transcript-highlight" class="sprite hidden"></button>
+            </div>
+            <div id="transcript-wrap" class="hidden"></div>
+        </div>
+    </div>
+
+    <div id="answer-key-widget" class="hidden">
+        <div class="header">
+            <span class="sprite key"></span>
+            <span class="sprite close"></span>
+            <span class="sprite toggle"></span>
+        </div>
+        <div class="body">
+        </div>
+        <div class="footer">
+            <button id="show-all-keys" class="button button-small active">Show all</button>
+            <button id="next-key" class="button button-small active">Next Item</button>
+            <button id="prev-key" class="button button-small active">Last Item</button>
+        </div>
+    </div>
+
+    <input type="file" class="hidden" id="attachment-upload"></div>
+<div id="dialog-overlay" class="hidden">
+    <div id="dialog-placeholder"></div>
+</div>
+
+
+
+<noscript data-type="dialog" id="delete-note-dialog-template">
+    <div id="delete-note-dialog">
+        Are you sure that you want to delete this note? <br><div class="buttons-wrap">
+            <button id="delete-note-button-accept" class="button">Yes</button>
+            <button id="delete-note-button-cancel" class="button">No</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="delete-attachment-dialog-template">
+    <div id="delete-attachment-dialog">
+        Are you sure that you want to delete this attachment? <br><div class="buttons-wrap">
+            <button id="delete-attachment-button-accept" class="button">Yes</button>
+            <button id="delete-attachment-button-cancel" class="button">No</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-file-size-exceded-dialog-template">
+    <div id="delete-note-dialog">
+        Max file size exceded (1.5Mb)<br><div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-file-size-exceded-dialog-template">
+    <div id="delete-note-dialog">
+        Unexpected error saving your file. Filoe too large?<br><div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-database-error-dialog-template">
+    <div id="delete-note-dialog">
+        Error accessing local database. Please try again<br><div id="custom-html-placeholder"></div>
+        <div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript data-type="dialog" id="attachment-not-supported-dialog-template">
+    <div id="delete-note-dialog">
+        Attachment functionality is not supported on this device.<br><div id="custom-html-placeholder"></div>
+        <div class="buttons-wrap">
+            <button id="generic-button-accept" class="button">Ok</button>
+        </div>
+    </div>
+</noscript>
+
+<noscript id="audio-player-template">
+    <div class="media presentationPlus ">
+        <div class="media-body">
+                        <div class="netex-audio-player" data-audio-swf-url="./netexAudio.swf" data-audio-player-id="audio_">
+                <div class="netex-audio-container">
+                    <audio preload="none"><source src="" type="audio/mpeg"></source></audio></div>
+                <div class="netex-audio-controls-container">
+                    <div class="netex-audio-controls">
+                        <div class="netex-audio-controls-item netex-audio-button-play-pause-restart netex-audio-button-play"></div>
+                        <div class="netex-audio-time-container">
+                            <span class="netex-audio-time-current">00:00</span>
+                            <div class="netex-audio-progress-bar-container">
+                                <div class="netex-audio-progress-bar">
+                                    <div class="netex-audio-progress-bar-inner"></div>
+                                </div>
+                            </div>
+                            <span class="netex-audio-time-duration">00:00</span>
+                        </div>
+                        <div class="netex-audio-volume-control">
+                                <div class="netex-audio-volume-slider netex-audio-volume-draggable">
+                                    <div class="netex-audio-volume-slider-foreground"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+
+
+
+
+
+
+                  <script src="commoncontents/ntxtmp/js/libs/jquery-2.1.1.min.js"></script><script src="trackingConfig.js"></script><script src="commoncontents/kidsBox/js/libs/mediaelement/mediaelement-and-player.js"></script><script src="commoncontents/kidsBox/js/netex/htmlActivity_min.js"></script><script src="trackingConfig.js"></script><script src="commoncontents/ntxtmp/js/libs/pointerEvents.js"></script><script src="commoncontents/ntxtmp/js/netex/ntxtmp_min.js"></script><script src="commoncontents/ntxtmp/js/netex/model/dbModel.js"></script><style>
+                .Wirisformula:not([width]) {
+                    vertical-align: middle !important;
+                    margin-bottom: -8px !important;
+                }
+            </style><style>
+                .mathquill_image {
+                    vertical-align: middle !important;
+                    margin-top: -3px !important;
+                }
+            </style></body></html>

@@ -1,0 +1,12 @@
+.testLCComponent .copyrightKidsBox{
+	background-image: url("../images/copyright.png");
+    width: 412px;
+    height: 13px;
+    bottom: 20px;
+    left: 320px;
+    position: absolute;
+}
+
+#activity-placeholder .container{
+	top:45px;
+}
